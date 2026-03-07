@@ -39,6 +39,7 @@ body {
 .bg-img {
     background-image: url('/static/images/bg-image.jpeg');
     background-size: cover;
+    background-position: center center; /* Center the image to expand from middle */
     object-fit: cover; /* Ensure image covers the area as it expands */
 }
 
