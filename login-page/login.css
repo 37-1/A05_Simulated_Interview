@@ -1,0 +1,680 @@
+/* Reset */
+*,
+*::before,
+*::after { box-sizing: border-box }
+html, body { height: 100% }
+body {
+  margin: 0;
+  color: #fff;
+  background: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC",
+    "Source Han Sans SC", "Microsoft YaHei", system-ui, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Background image + left 40% gradient mask */
+.bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("../static/images/default-image-7(1)(1).png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.bg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50vw; /* 左侧 50% */
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+}
+
+/* Header */
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px clamp(48px, 6vw, 80px); /* 进一步增加左右边距 */
+}
+.brand {
+  font-weight: 800;
+  font-size: clamp(22px, 2.2vw, 28px);
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600; /* 600-700, Semi-Bold */
+  font-size: clamp(16px, 1.4vw, 18px); /* 16-18px */
+  opacity: 0.95;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.15); /* 柔和文字阴影 */
+  -webkit-font-smoothing: antialiased; /* 抗锯齿 */
+  -moz-osx-font-smoothing: grayscale;
+}
+.nav__link:hover { opacity: 0.8 }
+.nav__item--download .nav__download {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px; /* 增加内边距，至少16px */
+  border: 0.5px solid rgba(255, 255, 255, 0.8); /* 边框变细，增加透明度 */
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: clamp(14px, 1.2vw, 16px);
+  line-height: 1;
+}
+.nav__download-icon {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.hero__content {
+  position: relative;
+  top: 18vh;
+  margin-left: clamp(3.6rem, 9vw, 7.2rem); /* 1.8倍于原值: ml-8 (2rem) -> 3.6rem */
+  max-width: 100%;
+  padding-bottom: 80px;
+  min-height: 500px;
+}
+.hero__text-block {
+  margin-bottom: 3rem; /* mb-12 */
+}
+.hero__heading-group {
+  margin: 0 0 2.5rem 0; /* mb-10 */
+  line-height: 1.25; /* leading-tight */
+}
+.hero__title {
+  /* text-4xl (2.25rem) to md:text-6xl (3.75rem) */
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem; /* mb-3 */
+  color: #7ED321; /* Keeping brand color, reference had var(--color-Primary-300) */
+  text-shadow: 0 0 20px rgba(126, 211, 33, 0.6), 0 0 40px rgba(126, 211, 33, 0.3), 0 0 60px rgba(126, 211, 33, 0.1);
+  letter-spacing: 1.2px;
+  line-height: 1.2;
+}
+.hero__subtitle {
+  /* Reference was inside h1, text-white */
+  font-size: clamp(2.25rem, 5vw, 3.75rem); /* Inherits from h1 size logic in reference structure */
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin: 0;
+}
+.hero__desc {
+  /* text-xl (1.25rem) to md:text-2xl (1.5rem) */
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  margin-bottom: 3rem; /* mb-12 */
+  color: rgba(255, 255, 255, 0.9); /* text-white/90 */
+  max-width: 48rem; /* max-w-3xl */
+  letter-spacing: 0.6px;
+  line-height: 1.7;
+}
+.hero__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem; /* space-y-4 */
+}
+@media (min-width: 640px) {
+  .hero__actions {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem; /* sm:space-x-6 */
+  }
+}
+.btn {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem; /* 增加间距 */
+  border-radius: 0.375rem; /* rounded-md */
+  font-weight: 600; /* font-semibold */
+  /* 字号提升1-2级: 1.125rem (18px) -> 1.25rem (20px) */
+  font-size: 1.25rem;
+  /* 增加padding以扩大按钮尺寸 */
+  padding: 1.25rem 3.25rem;
+  /* 最小尺寸控制 */
+  min-width: 44px;
+  min-height: 44px;
+  /* 高度增加: 2.75rem -> 3.5rem (56px) */
+  height: 3.5rem; 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition: all 0.2s;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .btn { 
+    width: auto;
+    /* 桌面端最小尺寸 */
+    min-width: 48px;
+    min-height: 48px;
+  }
+}
+.btn--primary {
+  background: #5CAF0A; /* Matches bg-primary */
+  color: #fff;
+}
+.btn--primary:hover { 
+  filter: brightness(0.92);
+  transform: scale(1.05); /* hover:scale-105 */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* hover:shadow-xl */
+}
+
+.btn__icon {
+  display: inline-flex;
+  align-items: center; /* 垂直居中 */
+  width: 1.5rem; /* w-6 (24px), 1.25rem * 1.2 = 1.5rem */
+  height: 1.5rem;
+  color: #fff;
+}
+
+/* 软件介绍按钮 */
+.hero__intro {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.3rem; /* 稍微加大字号，比 1.25rem (20px) 稍大，约 20.8px */
+  font-weight: 400; /* 不加粗 */
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* 添加 transition 以支持字号和透明度的平滑过渡 */
+  margin-left: 1.5rem; /* 增加离左侧（按钮）的距离，gap 之外的额外间距 */
+}
+.hero__intro:hover { 
+  opacity: 0.8;
+  transform: scale(1.05); /* 鼠标悬浮时整体微微放大，包括字号视觉效果 */
+}
+
+/* 翻转图标 */
+.hero__intro-icon svg {
+  transition: transform 0.3s ease-in-out;
+}
+.hero__intro:hover .hero__intro-icon svg,
+.hero__intro-icon.rotate-down svg {
+  transform: rotate(90deg);
+}
+
+.hero__intro-icon {
+  display: inline-flex;
+  width: 1.25rem; /* w-5 */
+  height: 1.25rem; /* h-5 */
+  color: #fff;
+}
+
+.hero__register {
+  margin-top: 1.5rem; /* mt-6 */
+  font-size: 1rem; /* text-base */
+  color: #fff;
+}
+.hero__register-link {
+  color: #fff;
+  text-decoration: none; /* 移除默认下划线 */
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem; /* h-10 */
+  padding: 0.5rem 0; /* 移除左右内边距，使内容宽度仅包含文字 */
+  font-weight: 500; /* font-medium */
+  position: relative;
+}
+
+.hero__register-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0.5rem; /* 调整下划线位置 */
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+.hero__register-link:hover::after {
+  width: 100%;
+}
+
+.hero__register-link:hover {
+  text-decoration: none;
+}
+
+/* Responsive ≤768px */
+@media (max-width: 768px) {
+  .header__inner { padding: 14px 20px }
+  .nav__list { gap: 12px }
+  .nav__item--download .nav__download { 
+    padding: 6px 12px; /* 移动端适配为12px */
+  }
+  .hero__content { 
+    top: 16vh; 
+    margin-left: 20px; 
+    max-width: 90vw;
+    min-height: auto; /* 移动端重置高度 */
+    padding-bottom: 40px; /* 移动端减少底部间距 */
+  }
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto }
+}
+
+/* Scroll Background Section */
+.scroll-background {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 0; /* Ensure it sits above the fixed -1 background */
+  background-color: #000; /* Fallback color */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Image will be loaded via JS to avoid initial performance hit */
+}
+
+.scroll-background.lazy-loaded {
+  background-image: url("../static/images/FF614036F16DA37A6AE159D0ECF5AD01.jpg");
+}
+
+/* Animation Classes */
+.slide-out-left {
+  transform: translateX(-120vw) !important;
+  opacity: 0;
+  transition: transform 400ms ease-out, opacity 400ms ease-out;
+}
+
+.slide-out-right {
+  transform: translateX(120vw) !important;
+  opacity: 0;
+  transition: transform 400ms ease-out, opacity 400ms ease-out;
+}
+
+/* Background Animation */
+.bg {
+  transition: transform 400ms ease;
+  transform-origin: center center;
+}
+
+.bg.bg-animate {
+  transform: scale(1.08); /* 放大 1.05-1.08 */
+  filter: brightness(1.1); /* 恢复明亮 */
+}
+
+.bg::after {
+  transition: width 400ms linear; /* 线性擦除 */
+}
+
+.bg.bg-animate::after {
+  width: 0; /* 宽度变0，从左到右擦除？不，原样式 left:0 width:50vw */
+  /* 如果要从右向左擦除，即左边不动，右边收缩。width 变 0 即可。 */
+  /* 原始：left:0, width: 50vw. 变 width:0 -> 向左收缩。符合 "从右向左执行线性擦除" */
+}
+
+/* Login Overlay & Card - Pixel Perfect Implementation */
+.login-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease;
+  background-color: transparent; /* No background color on overlay itself */
+}
+
+.login-overlay.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.login-backdrop-click-area {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.login-card {
+  background: #FFFFFF;
+  border-radius: 8px; /* Small radius ~8-12px */
+  padding: 48px 100px; /* Increased padding again (80px -> 100px) */
+  width: 568px; /* Increased width (528px -> 568px) to maintain content width */
+  max-width: 90vw;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Subtle shadow */
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 150ms ease-out, opacity 150ms ease-out;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-overlay.is-active .login-card {
+  transform: scale(1.25); /* 等比例放大 1.25 倍 */
+  opacity: 1;
+}
+
+.login-title {
+  font-family: sans-serif;
+  font-size: 32px; /* Large ~28-34px */
+  font-weight: 800; /* Heavy bold */
+  color: #1E2326; /* Dark gray/black */
+  margin: 0 0 36px 0; /* ~30-40px spacing */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 16px; /* ~12-16px vertical gap */
+  width: 100%;
+}
+
+.login-input {
+  width: 100%;
+  height: 48px; /* ~44-50px */
+  border-radius: 24px; /* Fully rounded pill */
+  border: none;
+  background: #F2F4F6; /* Very light gray */
+  padding: 0 24px; /* Horizontal padding */
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #333333;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+.login-input:hover {
+  background: #E8EAEC;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+}
+
+.login-input:focus {
+  background: #E8EAEC;
+}
+
+/* Hide icon when input has content */
+.login-input:not(:placeholder-shown) + .input-icon {
+  display: none;
+}
+
+.login-input::placeholder {
+  color: #AEB5BB; /* Mid-gray placeholder */
+}
+
+.input-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #AEB5BB; /* Light gray icon */
+  display: flex;
+  pointer-events: none;
+}
+
+.login-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 28px 0; /* ~20px top, ~28px bottom */
+  padding: 0 4px;
+  width: 100%;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.toggle-slider {
+  width: 32px;
+  height: 18px;
+  background: #E2E5E8; /* Light gray track */
+  border-radius: 9px;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.toggle-slider::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background: #22C45F; /* Active green */
+}
+
+.toggle-switch input:checked + .toggle-slider::before {
+  transform: translateX(14px);
+}
+
+.toggle-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #B9C0C6; /* Light gray text */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.forgot-link {
+  font-size: 11px;
+  font-weight: 700;
+  color: #25C4A0; /* Teal/Green accent */
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.forgot-link:hover {
+  color: #1EA882;
+}
+
+.login-submit-btn {
+  width: 100%;
+  height: 48px; /* ~48-56px */
+  border-radius: 24px; /* Fully rounded pill */
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #22C45F; /* Vibrant green */
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(34, 196, 95, 0.25);
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.login-submit-btn:hover {
+  background: #1EB055;
+  transform: translateY(-1px);
+}
+
+.login-submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .login-card {
+    width: 90vw;
+    padding: 40px 32px;
+  }
+  /* 移动端保持原始比例，避免溢出 */
+  .login-overlay.is-active .login-card {
+    transform: scale(1);
+  }
+  .login-title {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 375px) {
+  .login-card {
+    padding: 32px 24px;
+  }
+  .login-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .login-input, .login-submit-btn {
+    height: 44px;
+  }
+}
+
+/* Second Scroll Background Section */
+.scroll-background-2 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.scroll-background-2.lazy-loaded {
+  background-image: url("../static/images/【哲风壁纸】2024-10-23 19_59_25(1).png");
+}
+
+/* 返回顶部按钮 */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999; /* 层级最高 */
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8); /* 80% 不透明度白色 */
+  color: #333; /* 图标颜色改为深色以适应白色背景 */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 调整阴影 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease; /* 确保背景色过渡平滑 */
+  pointer-events: none; /* 隐藏时不可点击 */
+}
+
+.back-to-top[hidden] {
+  display: flex; /* 保持 flex 布局，通过 opacity 控制显示 */
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* 悬浮时 50% 不透明度 */
+  transform: translateY(-2px); /* 悬停上浮动效 */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top:active {
+  transform: translateY(0);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* 优化 SVG 图标 */
+.back-to-top svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2.5; /* 加粗线条 */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.2s ease;
+}
+
+.back-to-top:hover svg {
+  transform: scale(1.1); /* 悬浮时轻微放大 */
+}
+
+/* 辅助类：仅屏幕阅读器可见 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

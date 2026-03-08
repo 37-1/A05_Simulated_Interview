@@ -1,0 +1,76 @@
+{
+  "card": {
+    "width": "480px",
+    "maxWidth": "90vw",
+    "backgroundColor": "#FFFFFF",
+    "borderRadius": "8px",
+    "padding": "48px 56px",
+    "boxShadow": "0 10px 30px rgba(0,0,0,0.08)"
+  },
+  "typography": {
+    "heading": {
+      "text": "LOGIN",
+      "fontFamily": "sans-serif",
+      "fontWeight": "800",
+      "fontSize": "32px",
+      "color": "#1E2326",
+      "letterSpacing": "2px",
+      "marginBottom": "36px"
+    },
+    "input": {
+      "fontSize": "14px",
+      "color": "#333333",
+      "placeholderColor": "#AEB5BB"
+    },
+    "label": {
+      "fontSize": "11px",
+      "fontWeight": "600",
+      "color": "#B9C0C6",
+      "letterSpacing": "0.5px"
+    },
+    "link": {
+      "fontSize": "11px",
+      "fontWeight": "700",
+      "color": "#25C4A0",
+      "letterSpacing": "0.5px"
+    },
+    "button": {
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "color": "#FFFFFF",
+      "letterSpacing": "1px"
+    }
+  },
+  "elements": {
+    "inputField": {
+      "height": "48px",
+      "backgroundColor": "#F2F4F6",
+      "borderRadius": "24px",
+      "border": "none",
+      "marginBottom": "16px",
+      "padding": "0 24px"
+    },
+    "toggle": {
+      "width": "32px",
+      "height": "18px",
+      "backgroundColor": "#E2E5E8",
+      "activeColor": "#22C45F",
+      "knobSize": "14px"
+    },
+    "button": {
+      "height": "48px",
+      "backgroundColor": "#22C45F",
+      "borderRadius": "24px",
+      "width": "100%",
+      "marginTop": "24px"
+    }
+  },
+  "layout": {
+    "optionsRowMargin": "20px 0 28px 0"
+  },
+  "breakpoints": {
+    "mobile": "375px",
+    "tablet": "768px",
+    "desktop": "1440px"
+  }
+}
