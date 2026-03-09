@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>鹅来面</title>
+  <link rel="preload" as="image" href="../static/images/default-image-7(1)(1).png">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="page page--login">
+  <div class="bg" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="header__inner">
+      <div class="brand">鹅来面</div>
+      <nav class="nav" aria-label="主导航">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">主页</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">频道</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">联系我们</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">帮助中心</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">更多</a></li>
+          <li class="nav__item nav__item--download">
+            <a class="nav__download" href="#" data-download-btn>
+              <span class="nav__download-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+                  <path d="M8 1v8" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+                  <path d="M4.5 6.5 8 9.9l3.5-3.4" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 12.5h10" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+                </svg>
+              </span>
+              <span class="nav__download-text">下载客户端</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero" role="main">
+    <div class="hero__content">
+      <div class="hero__text-block">
+        <h1 class="hero__heading-group">
+          <div class="hero__title">AI模拟面试助手</div>
+          <div class="hero__subtitle">从训练模式到综合面试，助力你轻松取得心仪Offer</div>
+        </h1>
+        <p class="hero__desc">以单体训练和综合面试解决不足，全面发展进而脱颖而出</p>
+      </div>
+      <div class="hero__actions">
+        <button class="btn btn--primary hero__cta" type="button" data-sign-in>
+          <span class="btn__text">SIGN IN</span>
+          <span class="btn__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-6 h-6 ml-2" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </span>
+        </button>
+        <div class="hero__intro">
+          <span class="hero__intro-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-5 h-5 mr-2"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+          </span>
+          <span class="hero__intro-text">软件介绍</span>
+        </div>
+      </div>
+      <p class="hero__register">没有账号？<a class="hero__register-link" href="#" data-register>立刻注册！</a></p>
+    </div>
+  </main>
+
+  <section class="scroll-background" aria-hidden="true"></section>
+
+  <!-- 新增：第二个滚动可见背景图 -->
+  <section class="scroll-background-2" aria-hidden="true"></section>
+
+  <!-- 登录弹窗容器 -->
+  <div class="login-overlay" aria-hidden="true" id="login-overlay">
+    <div class="login-card">
+      <h2 class="login-title">LOGIN</h2>
+      <form class="login-form" id="login-form">
+        <div class="input-group">
+          <input type="text" placeholder="User" class="login-input" id="email" required>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Password" class="login-input" id="password" required>
+          <span class="input-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400"><rect width="18" height="12" x="3" y="6" rx="2" ry="2"/><path d="M2 10h20"/><path d="M6 14h2"/><path d="M10 14h2"/><path d="M14 14h2"/><path d="M18 14h2"/><path d="M10 18h4"/></svg>
+          </span>
+        </div>
+        
+        <div class="login-options">
+          <label class="toggle-switch">
+            <input type="checkbox">
+            <span class="toggle-slider"></span>
+            <span class="toggle-label">REMEMBER ME</span>
+          </label>
+          <a href="#" class="forgot-link">FORGOT PASSWORD?</a>
+        </div>
+
+        <button type="submit" class="btn btn--primary login-submit-btn">SIGN IN</button>
+      </form>
+    </div>
+    <!-- 点击背景返回 -->
+    <div class="login-backdrop-click-area" id="login-backdrop"></div>
+  </div>
+
+  <!-- 返回顶部按钮 -->
+  <button id="back-to-top" class="back-to-top" aria-label="返回顶部" hidden>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6"/>
+    </svg>
+    <span class="sr-only">返回顶部</span>
+  </button>
+
+  <script src="login.js" defer></script>
+</body>
+</html>
