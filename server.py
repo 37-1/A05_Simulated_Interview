@@ -32,7 +32,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                     response = {
                         'success': True, 
                         'message': 'Login successful', 
-                        'redirect': '/dashboard/dashboard.html'
+                        'redirect': '/home_page/html/index.html'
                     }
                     self.wfile.write(json.dumps(response).encode('utf-8'))
                 else:
