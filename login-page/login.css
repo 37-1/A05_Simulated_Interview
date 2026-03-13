@@ -50,11 +50,17 @@ body {
   padding: 24px clamp(48px, 6vw, 80px); /* 进一步增加左右边距 */
 }
 .brand {
-  font-weight: 800;
-  font-size: clamp(22px, 2.2vw, 28px);
-  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #ffffff;
   letter-spacing: 0.02em;
 }
+  .logo-secondary {
+    color: #A988D4;
+    font-weight: 700;
+    font-size: 1.44rem;
+  }
 .nav__list {
   display: flex;
   align-items: center;
@@ -104,7 +110,7 @@ body {
 }
 .hero__content {
   position: relative;
-  top: 18vh;
+  top: 20.5vh;
   margin-left: clamp(3.6rem, 9vw, 7.2rem); /* 1.8倍于原值: ml-8 (2rem) -> 3.6rem */
   max-width: 100%;
   padding-bottom: 80px;
@@ -122,8 +128,8 @@ body {
   font-size: clamp(2.25rem, 5vw, 3.75rem);
   font-weight: 700;
   margin-bottom: 0.75rem; /* mb-3 */
-  color: #22C45F; /* Emerald Green */
-  text-shadow: 0 0 20px rgba(34, 196, 95, 0.6), 0 0 40px rgba(34, 196, 95, 0.3), 0 0 60px rgba(34, 196, 95, 0.1);
+  color: #A988D4; /* Light Purple to match home page */
+  text-shadow: 0 0 20px rgba(169, 136, 212, 0.6), 0 0 40px rgba(169, 136, 212, 0.3), 0 0 60px rgba(169, 136, 212, 0.1);
   letter-spacing: 1.2px;
   line-height: 1.2;
 }
@@ -190,7 +196,7 @@ body {
   }
 }
 .btn--primary {
-  background: #22C45F; /* Emerald Green */
+  background: #A988D4; /* Light Purple */
   color: #fff;
 }
 .btn--primary:hover { 
@@ -535,16 +541,16 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background: #22C45F; /* Vibrant green */
+  background: #A988D4; /* Light Purple */
   color: #FFFFFF;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(34, 196, 95, 0.25);
+  box-shadow: 0 4px 12px rgba(169, 136, 212, 0.25);
   transition: background-color 0.2s, transform 0.1s;
 }
 
 .login-submit-btn:hover {
-  background: #1EB055;
+  background: #172A4E; /* Dark Blue (Secondary Color) */
   transform: translateY(-1px);
 }
 
@@ -608,8 +614,8 @@ body {
   padding: 0;
   border: none;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.8); /* 80% 不透明度白色 */
-  color: #333; /* 图标颜色改为深色以适应白色背景 */
+  background-color: #A988D4; /* Light Purple */
+  color: #fff; /* White icon */
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 调整阴影 */
   display: flex;
@@ -632,14 +638,14 @@ body {
 }
 
 .back-to-top:hover {
-  background-color: rgba(255, 255, 255, 0.5); /* 悬浮时 50% 不透明度 */
+  background-color: #172A4E; /* Dark Blue */
   transform: translateY(-2px); /* 悬停上浮动效 */
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .back-to-top:active {
   transform: translateY(0);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #172A4E;
 }
 
 /* 优化 SVG 图标 */
