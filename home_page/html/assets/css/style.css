@@ -486,7 +486,7 @@ body.dark-mode .mobile-menu-popup {
 /* hero Sections */
 .hero-section {
     min-height: 100vh;
-    background: url('../images/根据图片生成视频(1)(1).png') center center no-repeat; /* Replace with your image path */
+    background: url('../images/hero-video-gen.png') center center no-repeat; /* Replace with your image path */
     background-size: cover;
     color: var(--text-color-light);
     padding: 100px 0;

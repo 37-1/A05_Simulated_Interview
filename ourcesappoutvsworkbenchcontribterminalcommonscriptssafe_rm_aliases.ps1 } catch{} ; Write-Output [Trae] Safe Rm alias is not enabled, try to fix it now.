@@ -1,0 +1,1095 @@
+warning: in the working copy of 'home_page/html/about.html', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/home_page/html/about.html b/home_page/html/about.html[m
+[1mindex f6a2b86..ee47617 100644[m
+[1m--- a/home_page/html/about.html[m
+[1m+++ b/home_page/html/about.html[m
+[36m@@ -3,11 +3,104 @@[m [monload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet"[m
+ onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css"></noscript><link rel="preload" href="assets/vendors/fontawesome/css/all.min.css" as="style"[m
+ onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css"></noscript><link rel="stylesheet" href="assets/vendors/fonts/poppins/poppins.css"><link rel="preload" href="assets/vendors/aos/css/aos.css" as="style"[m
+ onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/vendors/aos/css/aos.css"></noscript><link rel="stylesheet" href="assets/css/style.min.css"><style>.resume-container{padding-top:100px;padding-bottom:50px;max-width:1200px;margin:0 auto;}.resume-header{text-align:center;margin-bottom:3rem;animation:fadeIn 0.8s ease-out;}.resume-avatar{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid var(--primary-color);margin-bottom:1.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.1);}.resume-name{font-size:2.5rem;font-weight:700;color:var(--secondary-color);margin-bottom:0.5rem;}.resume-title{font-size:1.2rem;color:var(--primary-color);font-weight:600;margin-bottom:1.5rem;}.resume-contact-info{display:flex;justify-content:center;flex-wrap:wrap;gap:1.5rem;margin-bottom:2rem;}.resume-contact-item{display:flex;align-items:center;gap:0.5rem;color:#555;font-size:0.95rem;}.resume-contact-item i{color:var(--primary-color);}.resume-section{margin-bottom:4rem;animation:slideUp 0.8s ease-out forwards;opacity:0;}.resume-section:nth-child(1){animation-delay:0.1s;}.resume-section:nth-child(2){animation-delay:0.2s;}.resume-section:nth-child(3){animation-delay:0.3s;}.resume-section:nth-child(4){animation-delay:0.4s;}.resume-section:nth-child(5){animation-delay:0.5s;}.resume-section-title{font-size:1.8rem;font-weight:700;color:var(--secondary-color);margin-bottom:2rem;position:relative;padding-bottom:0.8rem;border-bottom:2px solid rgba(0,0,0,0.05);}.resume-section-title::after{content:'';position:absolute;bottom:-2px;left:0;width:60px;height:2px;background-color:var(--primary-color);}.resume-timeline-item{position:relative;padding-left:2rem;margin-bottom:2.5rem;border-left:2px solid rgba(169, 136, 212, 0.3);}.resume-timeline-item::before{content:'';position:absolute;left:-6px;top:0;width:10px;height:10px;border-radius:50%;background-color:var(--primary-color);}.resume-item-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.5rem;flex-wrap:wrap;}.resume-role{font-size:1.2rem;font-weight:600;color:var(--secondary-color);}.resume-company{font-size:1rem;color:#666;font-weight:500;}.resume-date{font-size:0.9rem;color:var(--primary-color);font-weight:600;background-color:rgba(169, 136, 212, 0.1);padding:0.2rem 0.8rem;border-radius:20px;}.resume-description{color:#555;line-height:1.6;margin-top:0.5rem;}.resume-skills-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:1.5rem;}.resume-skill-category h4{font-size:1.1rem;font-weight:600;color:var(--secondary-color);margin-bottom:1rem;}.resume-skill-tags{display:flex;flex-wrap:wrap;gap:0.8rem;}.resume-skill-tag{background-color:#fff;border:1px solid rgba(0,0,0,0.1);padding:0.4rem 1rem;border-radius:5px;font-size:0.9rem;color:#555;transition:all 0.3s ease;}.resume-skill-tag:hover{background-color:#fff;color:#555;border-color:rgba(0,0,0,0.1);transform:none;}.resume-project-card{background-color:#fff;border-radius:10px;padding:1.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease, box-shadow 0.3s ease;height:100%;}.resume-project-card:hover{transform:none;box-shadow:0 4px 15px rgba(0,0,0,0.05);}.resume-project-title{font-size:1.2rem;font-weight:600;color:var(--secondary-color);margin-bottom:0.5rem;}.resume-project-tech{display:flex;gap:0.5rem;margin-bottom:1rem;font-size:0.8rem;color:var(--primary-color);flex-wrap:wrap;}.resume-footer{text-align:center;margin-top:4rem;padding-top:2rem;border-top:1px solid rgba(0,0,0,0.1);}body.dark-mode .resume-name, body.dark-mode .resume-section-title, body.dark-mode .resume-role, body.dark-mode .resume-skill-category h4, body.dark-mode .resume-project-title{color:var(--dark-text-color-light);}body.dark-mode .resume-contact-item, body.dark-mode .resume-company, body.dark-mode .resume-description, body.dark-mode .resume-skill-tag{color:var(--dark-text-color-dark);}body.dark-mode .resume-skill-tag, body.dark-mode .resume-project-card{background-color:var(--dark-secondary-color);border-color:rgba(255,255,255,0.05);}body.dark-mode .resume-section-title{border-bottom-color:rgba(255,255,255,0.1);}body.dark-mode .resume-date{background-color:rgba(169, 136, 212, 0.2);}body.dark-mode .resume-skill-tag:hover{background-color:var(--dark-secondary-color);color:var(--dark-text-color-dark);}@keyframes slideUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}@media (max-width:768px){.resume-item-header{flex-direction:column;}.resume-date{margin-top:0.5rem;display:inline-block;}}</style></head><body><div id="snowfall-container"></div><div id="preloader"><div class="cube-container"><div class="cube cube-1"></div><div class="cube cube-2"></div><div class="cube cube-3"></div><div class="cube cube-4"></div></div></div><header class="main-header fixed-top"><nav class="navbar navbar-expand-lg px-3 py-3"><div class="container-fluid"><div class="d-flex align-items-center w-100 justify-content-between"><a class="navbar-brand me-0" href="index.html"><span class="logo-main">Virtu</span><span class="logo-secondary">Prep</span></a><button class="navbar-toggler d-block d-lg-none" type="button" id="mobile-menu-toggle"><span class="fa-solid fa-bars menu-icon"></span></button><div class="theme-toggle-container"><button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode"><i class="fas fa-moon"></i></button></div></div><div class="collapse navbar-collapse justify-content-end d-none d-lg-block" id="navbarNav"><ul class="navbar-nav desktop-nav"><li class="nav-item"><a class="nav-link" href="index.html">主页</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">简历</a></li><li class="nav-item"><a class="nav-link" href="pricing.html">历史</a></li><li class="nav-item"><a class="nav-link" href="contact.html">帮助中心</a></li></ul></div></div></nav><div class="mega-menu-container position-absolute w-100" id="mega-menu"><div class="container-fluid px-5 py-4"><div class="row"><div class="col-lg-3 col-md-6 mb-4"><h5 class="mega-menu-title">Digital Marketing</h5><ul class="mega-menu-list list-unstyled"><li><a href="services.html">SEO</a></li><li><a href="services.html">Content Marketing</a></li><li><a href="services.html">Social Media</a></li><li><a href="services.html">PPC Campaigns</a></li></ul></div><div class="col-lg-3 col-md-6 mb-4"><h5 class="mega-menu-title">Web Development</h5><ul class="mega-menu-list list-unstyled"><li><a href="services.html">Front-End</a></li><li><a href="services.html">Back-End</a></li><li><a href="services.html">E-commerce</a></li><li><a href="services.html">CMS Solutions</a></li></ul></div><div class="col-lg-3 col-md-6 mb-4"><h5 class="mega-menu-title">Branding & Design</h5><ul class="mega-menu-list list-unstyled"><li><a href="services.html">Brand Strategy</a></li><li><a href="services.html">Logo Design</a></li><li><a href="services.html">UI/UX Design</a></li><li><a href="services.html">Graphic Design</a></li></ul></div><div class="col-lg-3 col-md-6 promo-box text-center p-4"><h4 class="text-light">Ready to start your project?</h4><p>Contact us to discuss your ideas and get a free quote today!</p><a href="#" class="btn btn-outline-light mt-3">Get a Free Quote</a></div></div></div></div></header><div class="mobile-menu-popup" id="mobile-menu-popup"><span class="fa-solid fa-xmark close-btn" id="mobile-menu-close"></span><ul class="mobile-nav-list list-unstyled text-center"><li><a href="index.html">主页</a></li><li><div class="d-flex align-items-center justify-content-center"><a href="services.html">Services</a><span class="mobile-dropdown-toggle ms-2" data-bs-toggle="collapse"[m
+[31m-data-bs-target="#mobileMegaMenu"><i class="fas fa-plus"></i></span></div><div class="collapse mega-menu-mobile mt-3" id="mobileMegaMenu"><ul class="list-unstyled"><li><a href="#">Digital Marketing</a></li><li><a href="#">Web Development</a></li><li><a href="#">Branding & Design</a></li></ul></div></li><li><a class="active" href="about.html">简历</a></li><li><a href="pricing.html">历史</a></li><li><a href="contact.html">帮助中心</a></li></ul><div class="social-icons mt-4"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div><div class="resume-container"><div class="resume-header"><img src="assets/images/john-smith.webp" alt="张伟" class="resume-avatar" width="150" height="150"><h1 class="resume-name">张伟</h1><p class="resume-title">2024届硕士应届生 / 意向岗位：全栈开发工程师</p><div class="resume-contact-info"><span class="resume-contact-item"><i class="fas fa-envelope"></i> zhang.wei@example.com</span><span class="resume-contact-item"><i class="fas fa-phone"></i> 138-0000-0000</span><span class="resume-contact-item"><i class="fas fa-map-marker-alt"></i> 成都</span><span class="resume-contact-item"><a href="#" target="_blank"><i class="fab fa-github"></i> github.com/zhangwei</a></span></div><p class="resume-description" style="max-width: 800px; margin: 0 auto;">[m
+[32m+[m[32mdata-bs-target="#mobileMegaMenu"><i class="fas fa-plus"></i></span></div><div class="collapse mega-menu-mobile mt-3" id="mobileMegaMenu"><ul class="list-unstyled"><li><a href="#">Digital Marketing</a></li><li><a href="#">Web Development</a></li><li><a href="#">Branding & Design</a></li></ul></div></li><li><a class="active" href="about.html">简历</a></li><li><a href="pricing.html">历史</a></li><li><a href="contact.html">帮助中心</a></li></ul><div class="social-icons mt-4"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div><div class="resume-container"><div class="resume-header"><img src="assets/images/john-smith.webp" alt="张伟" class="resume-avatar" width="150" height="150"><h1 class="resume-name">张伟</h1><p class="resume-title">2024届硕士应届生 / 意向岗位：java后端</p><div class="resume-contact-info"><span class="resume-contact-item"><i class="fas fa-envelope"></i> zhang.wei@example.com</span><span class="resume-contact-item"><i class="fas fa-phone"></i> 138-0000-0000</span><span class="resume-contact-item"><i class="fas fa-map-marker-alt"></i> 成都</span><span class="resume-contact-item"><a href="#" target="_blank"><i class="fab fa-github"></i> github.com/zhangwei</a></span></div><p class="resume-description" style="max-width: 800px; margin: 0 auto;">[m
+ 西华大学计算机硕士，具备扎实的全栈开发能力与良好的工程素养。在锐捷网络实习期间积累了企业级项目开发经验，熟悉从需求分析到上线部署的全流程。热衷于技术钻研，具备快速学习能力与团队协作精神。[m
+[31m-</p></div><section class="resume-section"><h2 class="resume-section-title">教育背景</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">计算机科学与技术硕士</h3><span class="resume-date">2021.09 - 2024.06</span></div><div class="resume-company">西华大学 (Xihua University)</div><p class="resume-description">主修课程：高级算法设计、分布式系统、机器学习。发表 CCF-B 类会议论文一篇。</p></div><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">软件工程学士</h3><span class="resume-date">2017.09 - 2021.06</span></div><div class="resume-company">西华大学 (Zhejiang University)</div><p class="resume-description">GPA: 3.8/4.0 (前5%)，连续三年获得校级一等奖学金。</p></div></section><section class="resume-section"><h2 class="resume-section-title">实习经历</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">全栈开发实习生</h3><span class="resume-date">2023.06 - 2023.12</span></div><div class="resume-company">锐捷网络 (Ruijie Networks)</div><p class="resume-description"><strong>核心职责：</strong>参与企业级云管理平台的前后端功能开发与性能优化。<br><strong>量化成果：</strong><br>[m
+[32m+[m[32m</p></div><section class="resume-section"><h2 class="resume-section-title">教育背景</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">计算机科学与技术硕士</h3><span class="resume-date">2021.09 - 2024.06</span></div><div class="resume-company">西华大学 (Xihua University)</div><p class="resume-description">主修课程：高级算法设计、分布式系统、机器学习。发表 CCF-B 类会议论文一篇。</p></div><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">软件工程学士</h3><span class="resume-date">2017.09 - 2021.06</span></div><div class="resume-company">西华大学 (XiHua University)</div><p class="resume-description">GPA: 3.8/4.0 (前5%)，连续三年获得校级一等奖学金。</p></div></section><section class="resume-section"><h2 class="resume-section-title">实习经历</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">全栈开发实习生</h3><span class="resume-date">2023.06 - 2023.12</span></div><div class="resume-company">锐捷网络 (Ruijie Networks)</div><p class="resume-description"><strong>核心职责：</strong>参与企业级云管理平台的前后端功能开发与性能优化。<br><strong>量化成果：</strong><br>[m
+ 1. 负责设备监控模块重构，利用 WebSocket 替换轮询机制，将数据实时性从 5s 提升至 500ms，降低服务器负载 40%。<br>[m
+ 2. 优化前端资源加载策略，引入代码分割与懒加载，首屏加载时间减少 35%。<br>[m
+ 3. 协助排查并修复线上高并发场景下的内存泄漏问题，提升系统稳定性。[m
+ </p></div><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">后端开发实习生</h3><span class="resume-date">2022.07 - 2022.09</span></div><div class="resume-company">金蝶软件 (Kingdee)</div><p class="resume-description"><strong>核心职责：</strong>参与内部效率工具平台的 API 开发与维护。<br><strong>量化成果：</strong>设计并实现了一套通用的日志采集中间件，统一了 10+ 个微服务的日志格式，提升了问题排查效率 50%。[m
+[31m-</p></div></section><section class="resume-section"><h2 class="resume-section-title">项目经验</h2><div class="row"><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">电商数据可视化大屏</h3><div class="resume-project-tech"><span><i class="fas fa-code"></i> React</span><span><i class="fas fa-chart-bar"></i> ECharts</span><span><i class="fas fa-server"></i> Spring Boot</span></div><p class="resume-description"><strong>项目描述：</strong>基于 React 与 ECharts 的实时数据监控大屏，用于展示销售额、用户活跃度等核心指标。<br><strong>主要贡献：</strong>实现了数据的实时推送与动态渲染，解决了大量图表渲染导致的页面卡顿问题。</p></div></div><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">分布式任务调度系统</h3><div class="resume-project-tech"><span><i class="fas fa-cogs"></i> Golang</span><span><i class="fas fa-database"></i> Etcd</span><span><i class="fas fa-network-wired"></i> gRPC</span></div><p class="resume-description"><strong>项目描述：</strong>高可用的分布式定时任务调度平台，支持动态扩容。<br><strong>主要贡献：</strong>设计了基于 Etcd 的选主机制与任务分发策略，保证了调度的一致性与高可用性。</p></div></div></div></section><section class="resume-section"><h2 class="resume-section-title">专业技能</h2><div class="resume-skills-grid"><div class="resume-skill-category"><h4>前端技术</h4><div class="resume-skill-tags"><span class="resume-skill-tag">熟练 React</span><span class="resume-skill-tag">掌握 Vue.js</span><span class="resume-skill-tag">掌握 TypeScript</span><span class="resume-skill-tag">了解 Webpack</span></div></div><div class="resume-skill-category"><h4>后端技术</h4><div class="resume-skill-tags"><span class="resume-skill-tag">熟练 Node.js</span><span class="resume-skill-tag">掌握 Golang</span><span class="resume-skill-tag">掌握 MySQL</span><span class="resume-skill-tag">了解 Redis</span></div></div><div class="resume-skill-category"><h4>其他</h4><div class="resume-skill-tags"><span class="resume-skill-tag">掌握 Git</span><span class="resume-skill-tag">了解 Docker</span><span class="resume-skill-tag">CET-6 (580)</span></div></div></div></section><div class="resume-footer"><h3 class="mb-4">期待您的回复！</h3><a href="#" class="btn btn-primary btn-lg">下载简历 PDF <i class="fas fa-download ms-2"></i></a></div></div><button class="snowfall-toggle-btn" id="snowfall-toggle-btn" aria-label="Toggle Snowfall Effect"><i class="fas fa-power-off"></i></button><a href="#" id="scroll-to-top" class="btn scroll-to-top-btn" aria-label="Scroll to Top"><i class="fas fa-chevron-up"></i></a><script src="assets/vendors/swiper/swiper-bundle.min.js" defer></script><script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js" defer></script><script src="assets/vendors/aos/js/aos.js" defer></script><script src="assets/js/main.min.js" defer></script><script>document.addEventListener('DOMContentLoaded',function(){setTimeout(function(){var p=document.getElementById('preloader');if(p){p.style.opacity='0';setTimeout(function(){p.style.display='none'},500)}},1000)});window.onload=function(){var p=document.getElementById('preloader');if(p){p.style.opacity='0';setTimeout(function(){p.style.display='none'},500)}}</script></body></html>[m
+\ No newline at end of file[m
+[32m+[m[32m</p></div></section><section class="resume-section"><h2 class="resume-section-title">项目经验</h2><div class="row"><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">电商数据可视化大屏</h3><div class="resume-project-tech"><span><i class="fas fa-code"></i> React</span><span><i class="fas fa-chart-bar"></i> ECharts</span><span><i class="fas fa-server"></i> Spring Boot</span></div><p class="resume-description"><strong>项目描述：</strong>基于 React 与 ECharts 的实时数据监控大屏，用于展示销售额、用户活跃度等核心指标。<br><strong>主要贡献：</strong>实现了数据的实时推送与动态渲染，解决了大量图表渲染导致的页面卡顿问题。</p></div></div><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">分布式任务调度系统</h3><div class="resume-project-tech"><span><i class="fas fa-cogs"></i> Golang</span><span><i class="fas fa-database"></i> Etcd</span><span><i class="fas fa-network-wired"></i> gRPC</span></div><p class="resume-description"><strong>项目描述：</strong>高可用的分布式定时任务调度平台，支持动态扩容。<br><strong>主要贡献：</strong>设计了基于 Etcd 的选主机制与任务分发策略，保证了调度的一致性与高可用性。</p></div></div></div></section><section class="resume-section"><h2 class="resume-section-title">专业技能</h2><div class="resume-skills-grid"><div class="resume-skill-category"><h4>后端技术</h4><div class="resume-skill-tags">          <span class="resume-skill-tag">熟练 Java</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Spring Boot</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Spring Cloud</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 MyBatis</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="resume-skill-category">[m
+[32m+[m[32m        <h4>前端技术</h4>[m
+[32m+[m[32m        <div class="resume-skill-tags">[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 React</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Vue.js</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 TypeScript</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="resume-skill-category">[m
+[32m+[m[32m        <h4>中间件与数据库</h4>[m
+[32m+[m[32m        <div class="resume-skill-tags">[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 MySQL</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Redis</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 RabbitMQ</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Elasticsearch</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="resume-skill-category">[m
+[32m+[m[32m        <h4>其他</h4>[m
+[32m+[m[32m        <div class="resume-skill-tags">[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Git</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Docker</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Linux</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">CET-6 (580)</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div></div></section><div class="resume-footer"><h3 class="mb-4">期待您的回复！</h3><a href="#" class="btn btn-primary btn-lg">下载简历 PDF <i class="fas fa-download ms-2"></i></a></div></div><a href="#" class="snowfall-toggle-btn" id="snowfall-toggle-btn" aria-label="Toggle Snowfall Effect" style="display: flex; align-items: center; justify-content: center;"><i class="fas fa-power-off"></i></a>[m
+[32m+[m[32m<style>[m
+[32m+[m[32m.scroll-to-top-btn {[m
+[32m+[m[32m    position: fixed;[m
+[32m+[m[32m    bottom: 20px;[m
+[32m+[m[32m    right: 25px;[m
+[32m+[m[32m    width: 40px;[m
+[32m+[m[32m    height: 40px;[m
+[32m+[m[32m    background-color: var(--primary-color, #a988d4);[m
+[32m+[m[32m    color: #fff;[m
+[32m+[m[32m    border-radius: 50%;[m
+[32m+[m[32m    display: none;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m    justify-content: center;[m
+[32m+[m[32m    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);[m
+[32m+[m[32m    z-index: 99;[m
+[32m+[m[32m    text-decoration: none;[m
+[32m+[m[32m}[m
+[32m+[m[32m@media (max-width: 768px) {[m
+[32m+[m[32m    .scroll-to-top-btn {[m
+[32m+[m[32m        bottom: 20px;[m
+[32m+[m[32m        right: 15px;[m
+[32m+[m[32m        width: 40px;[m
+[32m+[m[32m        height: 40px;[m
+[32m+[m[32m        font-size: 1.3rem;[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m[32mbody.dark-mode .scroll-to-top-btn {[m
+[32m+[m[32m    background-color: var(--dark-primary-color, #8b6eb0);[m
+[32m+[m[32m}[m
+[32m+[m[32m.scroll-to-top-btn:hover {[m
+[32m+[m[32m    background-color: var(--secondary-color, #d488c2);[m
+[32m+[m[32m    color: #fff;[m
+[32m+[m[32m}[m
+[32m+[m[32mbody.dark-mode .scroll-to-top-btn:hover {[m
+[32m+[m[32m    background-color: var(--dark-secondary-color, #b06e9f);[m
+[32m+[m[32m}[m
+[32m+[m[32m</style>[m
+[32m+[m[32m<a href="#" id="scroll-to-top" class="btn scroll-to-top-btn" aria-label="Scroll to Top">[m
+[32m+[m[32m    <i class="fas fa-chevron-up"></i>[m
+[32m+[m[32m</a>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m    document.addEventListener('DOMContentLoaded',[33mcommit 5d081813cc907f1b82e1e2fb01c99a96ff5a0870[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: 37-1 <3244371977@qq.com>
+Date:   Tue Mar 17 17:33:11 2026 +0800
+
+    refactor(about): inline scroll-to-top button
+
+[1mdiff --git a/home_page/html/about.html b/home_page/html/about.html[m
+[1mindex f6a2b86..ee47617 100644[m
+[1m--- a/home_page/html/about.html[m
+[1m+++ b/home_page/html/about.html[m
+[36m@@ -3,11 +3,104 @@[m [monload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet"[m
+ onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css"></noscript><link rel="preload" href="assets/vendors/fontawesome/css/all.min.css" as="style"[m
+ onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css"></noscript><link rel="stylesheet" href="assets/vendors/fonts/poppins/poppins.css"><link rel="preload" href="assets/vendors/aos/css/aos.css" as="style"[m
+ onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/vendors/aos/css/aos.css"></noscript><link rel="stylesheet" href="assets/css/style.min.css"><style>.resume-container{padding-top:100px;padding-bottom:50px;max-width:1200px;margin:0 auto;}.resume-header{text-align:center;margin-bottom:3rem;animation:fadeIn 0.8s ease-out;}.resume-avatar{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid var(--primary-color);margin-bottom:1.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.1);}.resume-name{font-size:2.5rem;font-weight:700;color:var(--secondary-color);margin-bottom:0.5rem;}.resume-title{font-size:1.2rem;color:var(--primary-color);font-weight:600;margin-bottom:1.5rem;}.resume-contact-info{display:flex;justify-content:center;flex-wrap:wrap;gap:1.5rem;margin-bottom:2rem;}.resume-contact-item{display:flex;align-items:center;gap:0.5rem;color:#555;font-size:0.95rem;}.resume-contact-item i{color:var(--primary-color);}.resume-section{margin-bottom:4rem;animation:slideUp 0.8s ease-out forwards;opacity:0;}.resume-section:nth-child(1){animation-delay:0.1s;}.resume-section:nth-child(2){animation-delay:0.2s;}.resume-section:nth-child(3){animation-delay:0.3s;}.resume-section:nth-child(4){animation-delay:0.4s;}.resume-section:nth-child(5){animation-delay:0.5s;}.resume-section-title{font-size:1.8rem;font-weight:700;color:var(--secondary-color);margin-bottom:2rem;position:relative;padding-bottom:0.8rem;border-bottom:2px solid rgba(0,0,0,0.05);}.resume-section-title::after{content:'';position:absolute;bottom:-2px;left:0;width:60px;height:2px;background-color:var(--primary-color);}.resume-timeline-item{position:relative;padding-left:2rem;margin-bottom:2.5rem;border-left:2px solid rgba(169, 136, 212, 0.3);}.resume-timeline-item::before{content:'';position:absolute;left:-6px;top:0;width:10px;height:10px;border-radius:50%;background-color:var(--primary-color);}.resume-item-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.5rem;flex-wrap:wrap;}.resume-role{font-size:1.2rem;font-weight:600;color:var(--secondary-color);}.resume-company{font-size:1rem;color:#666;font-weight:500;}.resume-date{font-size:0.9rem;color:var(--primary-color);font-weight:600;background-color:rgba(169, 136, 212, 0.1);padding:0.2rem 0.8rem;border-radius:20px;}.resume-description{color:#555;line-height:1.6;margin-top:0.5rem;}.resume-skills-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:1.5rem;}.resume-skill-category h4{font-size:1.1rem;font-weight:600;color:var(--secondary-color);margin-bottom:1rem;}.resume-skill-tags{display:flex;flex-wrap:wrap;gap:0.8rem;}.resume-skill-tag{background-color:#fff;border:1px solid rgba(0,0,0,0.1);padding:0.4rem 1rem;border-radius:5px;font-size:0.9rem;color:#555;transition:all 0.3s ease;}.resume-skill-tag:hover{background-color:#fff;color:#555;border-color:rgba(0,0,0,0.1);transform:none;}.resume-project-card{background-color:#fff;border-radius:10px;padding:1.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease, box-shadow 0.3s ease;height:100%;}.resume-project-card:hover{transform:none;box-shadow:0 4px 15px rgba(0,0,0,0.05);}.resume-project-title{font-size:1.2rem;font-weight:600;color:var(--secondary-color);margin-bottom:0.5rem;}.resume-project-tech{display:flex;gap:0.5rem;margin-bottom:1rem;font-size:0.8rem;color:var(--primary-color);flex-wrap:wrap;}.resume-footer{text-align:center;margin-top:4rem;padding-top:2rem;border-top:1px solid rgba(0,0,0,0.1);}body.dark-mode .resume-name, body.dark-mode .resume-section-title, body.dark-mode .resume-role, body.dark-mode .resume-skill-category h4, body.dark-mode .resume-project-title{color:var(--dark-text-color-light);}body.dark-mode .resume-contact-item, body.dark-mode .resume-company, body.dark-mode .resume-description, body.dark-mode .resume-skill-tag{color:var(--dark-text-color-dark);}body.dark-mode .resume-skill-tag, body.dark-mode .resume-project-card{background-color:var(--dark-secondary-color);border-color:rgba(255,255,255,0.05);}body.dark-mode .resume-section-title{border-bottom-color:rgba(255,255,255,0.1);}body.dark-mode .resume-date{background-color:rgba(169, 136, 212, 0.2);}body.dark-mode .resume-skill-tag:hover{background-color:var(--dark-secondary-color);color:var(--dark-text-color-dark);}@keyframes slideUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}@media (max-width:768px){.resume-item-header{flex-direction:column;}.resume-date{margin-top:0.5rem;display:inline-block;}}</style></head><body><div id="snowfall-container"></div><div id="preloader"><div class="cube-container"><div class="cube cube-1"></div><div class="cube cube-2"></div><div class="cube cube-3"></div><div class="cube cube-4"></div></div></div><header class="main-header fixed-top"><nav class="navbar navbar-expand-lg px-3 py-3"><div class="container-fluid"><div class="d-flex align-items-center w-100 justify-content-between"><a class="navbar-brand me-0" href="index.html"><span class="logo-main">Virtu</span><span class="logo-secondary">Prep</span></a><button class="navbar-toggler d-block d-lg-none" type="button" id="mobile-menu-toggle"><span class="fa-solid fa-bars menu-icon"></span></button><div class="theme-toggle-container"><button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode"><i class="fas fa-moon"></i></button></div></div><div class="collapse navbar-collapse justify-content-end d-none d-lg-block" id="navbarNav"><ul class="navbar-nav desktop-nav"><li class="nav-item"><a class="nav-link" href="index.html">主页</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">简历</a></li><li class="nav-item"><a class="nav-link" href="pricing.html">历史</a></li><li class="nav-item"><a class="nav-link" href="contact.html">帮助中心</a></li></ul></div></div></nav><div class="mega-menu-container position-absolute w-100" id="mega-menu"><div class="container-fluid px-5 py-4"><div class="row"><div class="col-lg-3 col-md-6 mb-4"><h5 class="mega-menu-title">Digital Marketing</h5><ul class="mega-menu-list list-unstyled"><li><a href="services.html">SEO</a></li><li><a href="services.html">Content Marketing</a></li><li><a href="services.html">Social Media</a></li><li><a href="services.html">PPC Campaigns</a></li></ul></div><div class="col-lg-3 col-md-6 mb-4"><h5 class="mega-menu-title">Web Development</h5><ul class="mega-menu-list list-unstyled"><li><a href="services.html">Front-End</a></li><li><a href="services.html">Back-End</a></li><li><a href="services.html">E-commerce</a></li><li><a href="services.html">CMS Solutions</a></li></ul></div><div class="col-lg-3 col-md-6 mb-4"><h5 class="mega-menu-title">Branding & Design</h5><ul class="mega-menu-list list-unstyled"><li><a href="services.html">Brand Strategy</a></li><li><a href="services.html">Logo Design</a></li><li><a href="services.html">UI/UX Design</a></li><li><a href="services.html">Graphic Design</a></li></ul></div><div class="col-lg-3 col-md-6 promo-box text-center p-4"><h4 class="text-light">Ready to start your project?</h4><p>Contact us to discuss your ideas and get a free quote today!</p><a href="#" class="btn btn-outline-light mt-3">Get a Free Quote</a></div></div></div></div></header><div class="mobile-menu-popup" id="mobile-menu-popup"><span class="fa-solid fa-xmark close-btn" id="mobile-menu-close"></span><ul class="mobile-nav-list list-unstyled text-center"><li><a href="index.html">主页</a></li><li><div class="d-flex align-items-center justify-content-center"><a href="services.html">Services</a><span class="mobile-dropdown-toggle ms-2" data-bs-toggle="collapse"[m
+[31m-data-bs-target="#mobileMegaMenu"><i class="fas fa-plus"></i></span></div><div class="collapse mega-menu-mobile mt-3" id="mobileMegaMenu"><ul class="list-unstyled"><li><a href="#">Digital Marketing</a></li><li><a href="#">Web Development</a></li><li><a href="#">Branding & Design</a></li></ul></div></li><li><a class="active" href="about.html">简历</a></li><li><a href="pricing.html">历史</a></li><li><a href="contact.html">帮助中心</a></li></ul><div class="social-icons mt-4"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div><div class="resume-container"><div class="resume-header"><img src="assets/images/john-smith.webp" alt="张伟" class="resume-avatar" width="150" height="150"><h1 class="resume-name">张伟</h1><p class="resume-title">2024届硕士应届生 / 意向岗位：全栈开发工程师</p><div class="resume-contact-info"><span class="resume-contact-item"><i class="fas fa-envelope"></i> zhang.wei@example.com</span><span class="resume-contact-item"><i class="fas fa-phone"></i> 138-0000-0000</span><span class="resume-contact-item"><i class="fas fa-map-marker-alt"></i> 成都</span><span class="resume-contact-item"><a href="#" target="_blank"><i class="fab fa-github"></i> github.com/zhangwei</a></span></div><p class="resume-description" style="max-width: 800px; margin: 0 auto;">[m
+[32m+[m[32mdata-bs-target="#mobileMegaMenu"><i class="fas fa-plus"></i></span></div><div class="collapse mega-menu-mobile mt-3" id="mobileMegaMenu"><ul class="list-unstyled"><li><a href="#">Digital Marketing</a></li><li><a href="#">Web Development</a></li><li><a href="#">Branding & Design</a></li></ul></div></li><li><a class="active" href="about.html">简历</a></li><li><a href="pricing.html">历史</a></li><li><a href="contact.html">帮助中心</a></li></ul><div class="social-icons mt-4"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div><div class="resume-container"><div class="resume-header"><img src="assets/images/john-smith.webp" alt="张伟" class="resume-avatar" width="150" height="150"><h1 class="resume-name">张伟</h1><p class="resume-title">2024届硕士应届生 / 意向岗位：java后端</p><div class="resume-contact-info"><span class="resume-contact-item"><i class="fas fa-envelope"></i> zhang.wei@example.com</span><span class="resume-contact-item"><i class="fas fa-phone"></i> 138-0000-0000</span><span class="resume-contact-item"><i class="fas fa-map-marker-alt"></i> 成都</span><span class="resume-contact-item"><a href="#" target="_blank"><i class="fab fa-github"></i> github.com/zhangwei</a></span></div><p class="resume-description" style="max-width: 800px; margin: 0 auto;">[m
+ 西华大学计算机硕士，具备扎实的全栈开发能力与良好的工程素养。在锐捷网络实习期间积累了企业级项目开发经验，熟悉从需求分析到上线部署的全流程。热衷于技术钻研，具备快速学习能力与团队协作精神。[m
+[31m-</p></div><section class="resume-section"><h2 class="resume-section-title">教育背景</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">计算机科学与技术硕士</h3><span class="resume-date">2021.09 - 2024.06</span></div><div class="resume-company">西华大学 (Xihua University)</div><p class="resume-description">主修课程：高级算法设计、分布式系统、机器学习。发表 CCF-B 类会议论文一篇。</p></div><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">软件工程学士</h3><span class="resume-date">2017.09 - 2021.06</span></div><div class="resume-company">西华大学 (Zhejiang University)</div><p class="resume-description">GPA: 3.8/4.0 (前5%)，连续三年获得校级一等奖学金。</p></div></section><section class="resume-section"><h2 class="resume-section-title">实习经历</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">全栈开发实习生</h3><span class="resume-date">2023.06 - 2023.12</span></div><div class="resume-company">锐捷网络 (Ruijie Networks)</div><p class="resume-description"><strong>核心职责：</strong>参与企业级云管理平台的前后端功能开发与性能优化。<br><strong>量化成果：</strong><br>[m
+[32m+[m[32m</p></div><section class="resume-section"><h2 class="resume-section-title">教育背景</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">计算机科学与技术硕士</h3><span class="resume-date">2021.09 - 2024.06</span></div><div class="resume-company">西华大学 (Xihua University)</div><p class="resume-description">主修课程：高级算法设计、分布式系统、机器学习。发表 CCF-B 类会议论文一篇。</p></div><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">软件工程学士</h3><span class="resume-date">2017.09 - 2021.06</span></div><div class="resume-company">西华大学 (XiHua University)</div><p class="resume-description">GPA: 3.8/4.0 (前5%)，连续三年获得校级一等奖学金。</p></div></section><section class="resume-section"><h2 class="resume-section-title">实习经历</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">全栈开发实习生</h3><span class="resume-date">2023.06 - 2023.12</span></div><div class="resume-company">锐捷网络 (Ruijie Networks)</div><p class="resume-description"><strong>核心职责：</strong>参与企业级云管理平台的前后端功能开发与性能优化。<br><strong>量化成果：</strong><br>[m
+ 1. 负责设备监控模块重构，利用 WebSocket 替换轮询机制，将数据实时性从 5s 提升至 500ms，降低服务器负载 40%。<br>[m
+ 2. 优化前端资源加载策略，引入代码分割与懒加载，首屏加载时间减少 35%。<br>[m
+ 3. 协助排查并修复线上高并发场景下的内存泄漏问题，提升系统稳定性。[m
+ </p></div><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">后端开发实习生</h3><span class="resume-date">2022.07 - 2022.09</span></div><div class="resume-company">金蝶软件 (Kingdee)</div><p class="resume-description"><strong>核心职责：</strong>参与内部效率工具平台的 API 开发与维护。<br><strong>量化成果：</strong>设计并实现了一套通用的日志采集中间件，统一了 10+ 个微服务的日志格式，提升了问题排查效率 50%。[m
+[31m-</p></div></section><section class="resume-section"><h2 class="resume-section-title">项目经验</h2><div class="row"><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">电商数据可视化大屏</h3><div class="resume-project-tech"><span><i class="fas fa-code"></i> React</span><span><i class="fas fa-chart-bar"></i> ECharts</span><span><i class="fas fa-server"></i> Spring Boot</span></div><p class="resume-description"><strong>项目描述：</strong>基于 React 与 ECharts 的实时数据监控大屏，用于展示销售额、用户活跃度等核心指标。<br><strong>主要贡献：</strong>实现了数据的实时推送与动态渲染，解决了大量图表渲染导致的页面卡顿问题。</p><[1mdiff --git a/home_page/html/about.html b/home_page/html/about.html[m
+[1mindex f6a2b86..ee47617 100644[m
+[1m--- a/home_page/html/about.html[m
+[1m+++ b/home_page/html/about.html[m
+[36m@@ -3,11 +3,104 @@[m [monload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet"[m
+ onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css"></noscript><link rel="preload" href="assets/vendors/fontawesome/css/all.min.css" as="style"[m
+ onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css"></noscript><link rel="stylesheet" href="assets/vendors/fonts/poppins/poppins.css"><link rel="preload" href="assets/vendors/aos/css/aos.css" as="style"[m
+ onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/vendors/aos/css/aos.css"></noscript><link rel="stylesheet" href="assets/css/style.min.css"><style>.resume-container{padding-top:100px;padding-bottom:50px;max-width:1200px;margin:0 auto;}.resume-header{text-align:center;margin-bottom:3rem;animation:fadeIn 0.8s ease-out;}.resume-avatar{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid var(--primary-color);margin-bottom:1.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.1);}.resume-name{font-size:2.5rem;font-weight:700;color:var(--secondary-color);margin-bottom:0.5rem;}.resume-title{font-size:1.2rem;color:var(--primary-color);font-weight:600;margin-bottom:1.5rem;}.resume-contact-info{display:flex;justify-content:center;flex-wrap:wrap;gap:1.5rem;margin-bottom:2rem;}.resume-contact-item{display:flex;align-items:center;gap:0.5rem;color:#555;font-size:0.95rem;}.resume-contact-item i{color:var(--primary-color);}.resume-section{margin-bottom:4rem;animation:slideUp 0.8s ease-out forwards;opacity:0;}.resume-section:nth-child(1){animation-delay:0.1s;}.resume-section:nth-child(2){animation-delay:0.2s;}.resume-section:nth-child(3){animation-delay:0.3s;}.resume-section:nth-child(4){animation-delay:0.4s;}.resume-section:nth-child(5){animation-delay:0.5s;}.resume-section-title{font-size:1.8rem;font-weight:700;color:var(--secondary-color);margin-bottom:2rem;position:relative;padding-bottom:0.8rem;border-bottom:2px solid rgba(0,0,0,0.05);}.resume-section-title::after{content:'';position:absolute;bottom:-2px;left:0;width:60px;height:2px;background-color:var(--primary-color);}.resume-timeline-item{position:relative;padding-left:2rem;margin-bottom:2.5rem;border-left:2px solid rgba(169, 136, 212, 0.3);}.resume-timeline-item::before{content:'';position:absolute;left:-6px;top:0;width:10px;height:10px;border-radius:50%;background-color:var(--primary-color);}.resume-item-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.5rem;flex-wrap:wrap;}.resume-role{font-size:1.2rem;font-weight:600;color:var(--secondary-color);}.resume-company{font-size:1rem;color:#666;font-weight:500;}.resume-date{font-size:0.9rem;color:var(--primary-color);font-weight:600;background-color:rgba(169, 136, 212, 0.1);padding:0.2rem 0.8rem;border-radius:20px;}.resume-description{color:#555;line-height:1.6;margin-top:0.5rem;}.resume-skills-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:1.5rem;}.resume-skill-category h4{font-size:1.1rem;font-weight:600;color:var(--secondary-color);margin-bottom:1rem;}.resume-skill-tags{display:flex;flex-wrap:wrap;gap:0.8rem;}.resume-skill-tag{background-color:#fff;border:1px solid rgba(0,0,0,0.1);padding:0.4rem 1rem;border-radius:5px;font-size:0.9rem;color:#555;transition:all 0.3s ease;}.resume-skill-tag:hover{background-color:#fff;color:#555;border-color:rgba(0,0,0,0.1);transform:none;}.resume-project-card{background-color:#fff;border-radius:10px;padding:1.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease, box-shadow 0.3s ease;height:100%;}.resume-project-card:hover{transform:none;box-shadow:0 4px 15px rgba(0,0,0,0.05);}.resume-project-title{font-size:1.2rem;font-weight:600;color:var(--secondary-color);margin-bottom:0.5rem;}.resume-project-tech{display:flex;gap:0.5rem;margin-bottom:1rem;font-size:0.8rem;color:var(--primary-color);flex-wrap:wrap;}.resume-footer{text-align:center;margin-top:4rem;padding-top:2rem;border-top:1px solid rgba(0,0,0,0.1);}body.dark-mode .resume-name, body.dark-mode .resume-section-title, body.dark-mode .resume-role, body.dark-mode .resume-skill-category h4, body.dark-mode .resume-project-title{color:var(--dark-text-color-light);}body.dark-mode .resume-contact-item, body.dark-mode .resume-company, body.dark-mode .resume-description, body.dark-mode .resume-skill-tag{color:var(--dark-text-color-dark);}body.dark-mode .resume-skill-tag, body.dark-mode .resume-project-card{background-color:var(--dark-secondary-color);border-color:rgba(255,255,255,0.05);}body.dark-mode .resume-section-title{border-bottom-color:rgba(255,255,255,0.1);}body.dark-mode .resume-date{background-color:rgba(169, 136, 212, 0.2);}body.dark-mode .resume-skill-tag:hover{background-color:var(--dark-secondary-color);color:var(--dark-text-color-dark);}@keyframes slideUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}@media (max-width:768px){.resume-item-header{flex-direction:column;}.resume-date{margin-top:0.5rem;display:inline-block;}}</style></head><body><div id="snowfall-container"></div><div id="preloader"><div class="cube-container"><div class="cube cube-1"></div><div class="cube cube-2"></div><div class="cube cube-3"></div><div class="cube cube-4"></div></div></div><header class="main-header fixed-top"><nav class="navbar navbar-expand-lg px-3 py-3"><div class="container-fluid"><div class="d-flex align-items-center w-100 justify-content-between"><a class="navbar-brand me-0" href="index.html"><span class="logo-main">Virtu</span><span class="logo-secondary">Prep</span></a><button class="navbar-toggler d-block d-lg-none" type="button" id="mobile-menu-toggle"><span class="fa-solid fa-bars menu-icon"></span></button><div class="theme-toggle-container"><button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode"><i class="fas fa-moon"></i></button></div></div><div class="collapse navbar-collapse justify-content-end d-none d-lg-block" id="navbarNav"><ul class="navbar-nav desktop-nav"><li class="nav-item"><a class="nav-link" href="index.html">主页</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">简历</a></li><li class="nav-item"><a class="nav-link" href="pricing.html">历史</a></li><li class="nav-item"><a class="nav-link" href="contact.html">帮助中心</a></li></ul></div></div></nav><div class="mega-menu-container position-absolute w-100" id="mega-menu"><div class="container-fluid px-5 py-4"><div class="row"><div class="col-lg-3 col-md-6 mb-4"><h5 class="mega-menu-title">Digital Marketing</h5><ul class="mega-menu-list list-unstyled"><li><a href="services.html">SEO</a></li><li><a href="services.html">Content Marketing</a></li><li><a href="services.html">Social Media</a></li><li><a href="services.html">PPC Campaigns</a></li></ul></div><div class="col-lg-3 col-md-6 mb-4"><h5 class="mega-menu-title">Web Development</h5><ul class="mega-menu-list list-unstyled"><li><a href="services.html">Front-End</a></li><li><a href="services.html">Back-End</a></li><li><a href="services.html">E-commerce</a></li><li><a href="services.html">CMS Solutions</a></li></ul></div><div class="col-lg-3 col-md-6 mb-4"><h5 class="mega-menu-title">Branding & Design</h5><ul class="mega-menu-list list-unstyled"><li><a href="services.html">Brand Strategy</a></li><li><a href="services.html">Logo Design</a></li><li><a href="services.html">UI/UX Design</a></li><li><a href="services.html">Graphic Design</a></li></ul></div><div class="col-lg-3 col-md-6 promo-box text-center p-4"><h4 class="text-light">Ready to start your project?</h4><p>Contact us to discuss your ideas and get a free quote today!</p><a href="#" class="btn btn-outline-light mt-3">Get a Free Quote</a></div></div></div></div></header><div class="mobile-menu-popup" id="mobile-menu-popup"><span class="fa-solid fa-xmark close-btn" id="mobile-menu-close"></span><ul class="mobile-nav-list list-unstyled text-center"><li><a href="index.html">主页</a></li><li><div class="d-flex align-items-center justify-content-center"><a href="services.html">Services</a><span class="mobile-dropdown-toggle ms-2" data-bs-toggle="collapse"[m
+[31m-data-bs-target="#mobileMegaMenu"><i class="fas fa-plus"></i></span></div><div class="collapse mega-menu-mobile mt-3" id="mobileMegaMenu"><ul class="list-unstyled"><li><a href="#">Digital Marketing</a></li><li><a href="#">Web Development</a></li><li><a href="#">Branding & Design</a></li></ul></div></li><li><a class="active" href="about.html">简历</a></li><li><a href="pricing.html">历史</a></li><li><a href="contact.html">帮助中心</a></li></ul><div class="social-icons mt-4"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div><div class="resume-container"><div class="resume-header"><img src="assets/images/john-smith.webp" alt="张伟" class="resume-avatar" width="150" height="150"><h1 class="resume-name">张伟</h1><p class="resume-title">2024届硕士应届生 / 意向岗位：全栈开发工程师</p><div class="resume-contact-info"><span class="resume-contact-item"><i class="fas fa-envelope"></i> zhang.wei@example.com</span><span class="resume-contact-item"><i class="fas fa-phone"></i> 138-0000-0000</span><span class="resume-contact-item"><i class="fas fa-map-marker-alt"></i> 成都</span><span class="resume-contact-item"><a href="#" target="_blank"><i class="fab fa-github"></i> github.com/zhangwei</a></span></div><p class="resume-description" style="max-width: 800px; margin: 0 auto;">[m
+[32m+[m[32mdata-bs-target="#mobileMegaMenu"><i class="fas fa-plus"></i></span></div><div class="collapse mega-menu-mobile mt-3" id="mobileMegaMenu"><ul class="list-unstyled"><li><a href="#">Digital Marketing</a></li><li><a href="#">Web Development</a></li><li><a href="#">Branding & Design</a></li></ul></div></li><li><a class="active" href="about.html">简历</a></li><li><a href="pricing.html">历史</a></li><li><a href="contact.html">帮助中心</a></li></ul><div class="social-icons mt-4"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div><div class="resume-container"><div class="resume-header"><img src="assets/images/john-smith.webp" alt="张伟" class="resume-avatar" width="150" height="150"><h1 class="resume-name">张伟</h1><p class="resume-title">2024届硕士应届生 / 意向岗位：java后端</p><div class="resume-contact-info"><span class="resume-contact-item"><i class="fas fa-envelope"></i> zhang.wei@example.com</span><span class="resume-contact-item"><i class="fas fa-phone"></i> 138-0000-0000</span><span class="resume-contact-item"><i class="fas fa-map-marker-alt"></i> 成都</span><span class="resume-contact-item"><a href="#" target="_blank"><i class="fab fa-github"></i> github.com/zhangwei</a></span></div><p class="resume-description" style="max-width: 800px; margin: 0 auto;">[m
+ 西华大学计算机硕士，具备扎实的全栈开发能力与良好的工程素养。在锐捷网络实习期间积累了企业级项目开发经验，熟悉从需求分析到上线部署的全流程。热衷于技术钻研，具备快速学习能力与团队协作精神。[m
+[31m-</p></div><section class="resume-section"><h2 class="resume-section-title">教育背景</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">计算机科学与技术硕士</h3><span class="resume-date">2021.09 - 2024.06</span></div><div class="resume-company">西华大学 (Xihua University)</div><p class="resume-description">主修课程：高级算法设计、分布式系统、机器学习。发表 CCF-B 类会议论文一篇。</p></div><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">软件工程学士</h3><span class="resume-date">2017.09 - 2021.06</span></div><div class="resume-company">西华大学 (Zhejiang University)</div><p class="resume-description">GPA: 3.8/4.0 (前5%)，连续三年获得校级一等奖学金。</p></div></section><section class="resume-section"><h2 class="resume-section-title">实习经历</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">全栈开发实习生</h3><span class="resume-date">2023.06 - 2023.12</span></div><div class="resume-company">锐捷网络 (Ruijie Networks)</div><p class="resume-description"><strong>核心职责：</strong>参与企业级云管理平台的前后端功能开发与性能优化。<br><strong>量化成果：</strong><br>[m
+[32m+[m[32m</p></div><section class="resume-section"><h2 class="resume-section-title">教育背景</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">计算机科学与技术硕士</h3><span class="resume-date">2021.09 - 2024.06</span></div><div class="resume-company">西华大学 (Xihua University)</div><p class="resume-description">主修课程：高级算法设计、分布式系统、机器学习。发表 CCF-B 类会议论文一篇。</p></div><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">软件工程学士</h3><span class="resume-date">2017.09 - 2021.06</span></div><div class="resume-company">西华大学 (XiHua University)</div><p class="resume-description">GPA: 3.8/4.0 (前5%)，连续三年获得校级一等奖学金。</p></div></section><section class="resume-section"><h2 class="resume-section-title">实习经历</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">全栈开发实习生</h3><span class="resume-date">2023.06 - 2023.12</span></div><div class="resume-company">锐捷网络 (Ruijie Networks)</div><p class="resume-description"><strong>核心职责：</strong>参与企业级云管理平台的前后端功能开发与性能优化。<br><strong>量化成果：</strong><br>[m
+ 1. 负责设备监控模块重构，利用 WebSocket 替换轮询机制，将数据实时性从 5s 提升至 500ms，降低服务器负载 40%。<br>[m
+ 2. 优化前端资源加载策略，引入代码分割与懒加载，首屏加载时间减少 35%。<br>[m
+ 3. 协助排查并修复线上高并发场景下的内存泄漏问题，提升系统稳定性。[m
+ </p></div><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">后端开发实习生</h3><span class="resume-date">2022.07 - 2022.09</span></div><div class="resume-company">金蝶软件 (Kingdee)</div><p class="resume-description"><strong>核心职责：</strong>参与内部效率工具平台的 API 开发与维护。<br><strong>量化成果：</strong>设计并实现了一套通用的日志采集中间件，统一了 10+ 个微服务的日志格式，提升了问题排查效率 50%。[m
+[31m-</p></div></section><section class="resume-section"><h2 class="resume-section-title">项目经验</h2><div class="row"><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">电商数据可视化大屏</h3><div class="resume-project-tech"><span><i class="fas fa-code"></i> React</span><span><i class="fas fa-chart-bar"></i> ECharts</span><span><i class="fas fa-server"></i> Spring Boot</span></div><p class="resume-description"><strong>项目描述：</strong>基于 React 与 ECharts 的实时数据监控大屏，用于展示销售额、用户活跃度等核心指标。<br><strong>主要贡献：</strong>实现了数据的实时推送与动态渲染，解决了大量图表渲染导致的页面卡顿问题。</p></div></div><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">分布式任务调度系统</h3><div class="resume-project-tech"><span><i class="fas fa-cogs"></i> Golang</span><span><i class="fas fa-database"></i> Etcd</span><span><i class="fas fa-network-wired"></i> gRPC</span></div><p class="resume-description"><strong>项目描述：</strong>高可用的分布式定时任务调度平台，支持动态扩容。<br><strong>主要贡献：</strong>设计了基于 Etcd 的选主机制与任务分发策略，保证了调度的一致性与高可用性。</p></div></div></div></section><section class="resume-section"><h2 class="resume-section-title">专业技能</h2><div class="resume-skills-grid"><div class="resume-skill-category"><h4>前端技术</h4><div class="resume-skill-tags"><span class="resume-skill-tag">熟练 React</span><span class="resume-skill-tag">掌握 Vue.js</span><span class="resume-skill-tag">掌握 TypeScript</span><span class="resume-skill-tag">了解 Webpack</span></div></div><div class="resume-skill-category"><h4>后端技术</h4><div class="resume-skill-tags"><span class="resume-skill-tag">熟练 Node.js</span><span class="resume-skill-tag">掌握 Golang</span><span class="resume-skill-tag">掌握 MySQL</span><span class="resume-skill-tag">了解 Redis</span></div></div><div class="resume-skill-category"><h4>其他</h4><div class="resume-skill-tags"><span class="resume-skill-tag">掌握 Git</span><span class="resume-skill-tag">了解 Docker</span><span class="resume-skill-tag">CET-6 (580)</span></div></div></div></section><div class="resume-footer"><h3 class="mb-4">期待您的回复！</h3><a href="#" class="btn btn-primary btn-lg">下载简历 PDF <i class="fas fa-download ms-2"></i></a></div></div><button class="snowfall-toggle-btn" id="snowfall-toggle-btn" aria-label="Toggle Snowfall Effect"><i class="fas fa-power-off"></i></button><a href="#" id="scroll-to-top" class="btn scroll-to-top-btn" aria-label="Scroll to Top"><i class="fas fa-chevron-up"></i></a><script src="assets/vendors/swiper/swiper-bundle.min.js" defer></script><script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js" defer></script><script src="assets/vendors/aos/js/aos.js" defer></script><script src="assets/js/main.min.js" defer></script><script>document.addEventListener('DOMContentLoaded',function(){setTimeout(function(){var p=document.getElementById('preloader');if(p){p.style.opacity='0';setTimeout(function(){p.style.display='none'},500)}},1000)});window.onload=function(){var p=document.getElementById('preloader');if(p){p.style.opacity='0';setTimeout(function(){p.style.display='none'},500)}}</script></body></html>[m
+\ No newline at end of file[m
+[32m+[m[32m</p></div></section><section class="resume-section"><h2 class="resume-section-title">项目经验</h2><div class="row"><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">电商数据可视化大屏</h3><div class="resume-project-tech"><span><i class="fas fa-code"></i> React</span><span><i class="fas fa-chart-bar"></i> ECharts</span><span><i class="fas fa-server"></i> Spring Boot</span></div><p class="resume-description"><strong>项目描述：</strong>基于 React 与 ECharts 的实时数据监控大屏，用于展示销售额、用户活跃度等核心指标。<br><strong>主要贡献：</strong>实现了数据的实时推送与动态渲染，解决了大量图表渲染导致的页面卡顿问题。</p></div></div><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">分布式任务调度系统</h3><div class="resume-project-tech"><span><i class="fas fa-cogs"></i> Golang</span><span><i class="fas fa-database"></i> Etcd</span><span><i class="fas fa-network-wired"></i> gRPC</span></div><p class="resume-description"><strong>项目描述：</strong>高可用的分布式定时任务调度平台，支持动态扩容。<br><strong>主要贡献：</strong>设计了基于 Etcd 的选主机制与任务分发策略，保证了调度的一致性与高可用性。</p></div></div></div></section><section class="resume-section"><h2 class="resume-section-title">专业技能</h2><div class="resume-skills-grid"><div class="resume-skill-category"><h4>后端技术</h4><div class="resume-skill-tags">          <span class="resume-skill-tag">熟练 Java</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Spring Boot</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Spring Cloud</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 MyBatis</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="resume-skill-category">[m
+[32m+[m[32m        <h4>前端技术</h4>[m
+[32m+[m[32m        <div class="resume-skill-tags">[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 React</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Vue.js</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 TypeScript</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="resume-skill-category">[m
+[32m+[m[32m        <h4>中间件与数据库</h4>[m
+[32m+[m[32m        <div class="resume-skill-tags">[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 MySQL</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Redis</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 RabbitMQ</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Elasticsearch</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="resume-skill-category">[m
+[32m+[m[32m        <h4>其他</h4>[m
+[32m+[m[32m        <div class="resume-skill-tags">[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Git</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Docker</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Linux</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">CET-6 (580)</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div></div></section><div class="resume-footer"><h3 class="mb-4">期待您的回复！</h3><a href="#" class="btn btn-primary btn-lg">下载简历 PDF <i class="fas fa-download ms-2"></i></a></div></div><a href="#" class="snowfall-toggle-btn" id="snowfall-toggle-btn" aria-label="Toggle Snowfall Effect" style="display: flex; align-items: center; justify-content: center;"><i class="fas fa-power-off"></i></a>[m
+[32m+[m[32m<style>[m
+[32m+[m[32m.scroll-to-top-btn {[m
+[32m+[m[32m    position: fixed;[m
+[32m+[m[32m    bottom: 20px;[m
+[32m+[m[32m    right: 25px;[m
+[32m+[m[32m    width: 40px;[m
+[32m+[m[32m    height: 40px;[m
+[32m+[m[32m    background-color: var(--primary-color, #a988d4);[m
+[32m+[m[32m    color: #fff;[m
+[32m+[m[32m    border-radius: 50%;[m
+[32m+[m[32m    display: none;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m    justify-content: center;[m
+[32m+[m[32m    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);[m
+[32m+[m[32m    z-index: 99;[m
+[32m+[m[32m    text-decoration: none;[m
+[32m+[m[32m}[m
+[32m+[m[32m@media (max-width: 768px) {[m
+[32m+[m[32m    .scroll-to-top-btn {[m
+[32m+[m[32m        bottom: 20px;[m
+[32m+[m[32m        right: 15px;[m
+[32m+[m[32m        width: 40px;[m
+[32m+[m[32m        height: 40px;[m
+[32m+[m[32m        font-size: 1.3rem;[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m[32mbody.dark-mode .scroll-to-top-btn {[m
+[32m+[m[32m    background-color: var(--dark-primary-color, #8b6eb0);[m
+[32m+[m[32m}[m
+[32m+[m[32m.scroll-to-top-btn:hover {[m
+[32m+[m[32m    background-color: var(--secondary-color, #d488c2);[m
+[32m+[m[32m    color: #fff;[m
+[32m+[m[32m}[m
+[32m+[m[32mbody.dark-mode .scroll-to-top-btn:hover {[m
+[32m+[m[32m    background-color: var(--dark-secondary-color, #b06e9f);[m
+[32m+[m[32m}[m
+[32m+[m[32m</style>[m
+[32m+[m[32m<a href="#" id="scroll-to-top" class="btn scroll-to-top-btn" aria-label="Scroll to Top">[m
+[32m+[m[32m    <i class="fas fa-chevron-up"></i>[m
+[32m+[m[32m</a>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m    document.addEventListener('DOMContentLoaded',/div></div><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">分布式任务调度系统</h3><div class="resume-project-tech"><span><i class="fas fa-cogs"></i> Golang</span><span><i class="fas fa-database"></i> Etcd</span><span><i class="fas fa-network-wired"></i> gRPC</span></div><p class="resume-description"><strong>项目描述：</strong>高可用的分布式定时任务调度平台，支持动态扩容。<br><strong>主要贡献：</strong>设计了基于 Etcd 的选主机制与任务分发策略，保证了调度的一致性与高可用性。</p></div></div></div></section><section class="resume-section"><h2 class="resume-section-title">专业技能</h2><div class="resume-skills-grid"><div class="resume-skill-category"><h4>前端技术</h4><div class="resume-skill-tags"><span class="resume-skill-tag">熟练 React</span><span class="resume-skill-tag">掌握 Vue.js</span><span class="resume-skill-tag">掌握 TypeScript</span><span class="resume-skill-tag">了解 Webpack</span></div></div><div class="resume-skill-category"><h4>后端技术</h4><div class="resume-skill-tags"><span class="resume-skill-tag">熟练 Node.js</span><span class="resume-skill-tag">掌握 Golang</span><span class="resume-skill-tag">掌握 MySQL</span><span class="resume-skill-tag">了解 Redis</span></div></div><div class="resume-skill-category"><h4>其他</h4><div class="resume-skill-tags"><span class="resume-skill-tag">掌握 Git</span><span class="resume-skill-tag">了解 Docker</span><span class="resume-skill-tag">CET-6 (580)</span></div></div></div></section><div class="resume-footer"><h3 class="mb-4">期待您的回复！</h3><a href="#" class="btn btn-primary btn-lg">下载简历 PDF <i class="fas fa-download ms-2"></i></a></div></div><button class="snowfall-toggle-btn" id="snowfall-toggle-btn" aria-label="Toggle Snowfall Effect"><i class="fas fa-power-off"></i></button><a href="#" id="scroll-to-top" class="btn scroll-to-top-btn" aria-label="Scroll to Top"><i class="fas fa-chevron-up"></i></a><script src="assets/vendors/swiper/swiper-bundle.min.js" defer></script><script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js" defer></script><script src="assets/vendors/aos/js/aos.js" defer></script><script src="assets/js/main.min.js" defer></script><script>document.addEventListener('DOMContentLoaded',function(){setTimeout(function(){var p=document.getElementById('preloader');if(p){p.style.opacity='0';setTimeout(function(){p.style.display='none'},500)}},1000)});window.onload=function(){var p=document.getElementById('preloader');if(p){p.style.opacity='0';setTimeout(function(){p.style.display='none'},500)}}</script></body></html>[m
+\ No newline at end of file[m
+[32m+[m[32m</p></div></section><section class="resume-section"><h2 class="resume-section-title">项目经验</h2><div class="row"><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">电商数据可视化大屏</h3><div class="resume-project-tech"><span><i class="fas fa-code"></i> React</span><span><i class="fas fa-chart-bar"></i> ECharts</span><span><i class="fas fa-server"></i> Spring Boot</span></div><p class="resume-description"><strong>项目描述：</strong>基于 React 与 ECharts 的实时数据监控大屏，用于展示销售额、用户活跃度等核心指标。<br><strong>主要贡献：</strong>实现了数据的实时推送与动态渲染，解决了大量图表渲染导致的页面卡顿问题。</p></div></div><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">分布式任务调度系统</h3><div class="resume-project-tech"><span><i class="fas fa-cogs"></i> Golang</span><span><i class="fas fa-database"></i> Etcd</span><span><i class="fas fa-network-wired"></i> gRPC</span></div><p class="resume-description"><strong>项目描述：</strong>高可用的分布式定时任务调度平台，支持动态扩容。<br><strong>主要贡献：</strong>设计了基于 Etcd 的选主机制与任务分发策略，保证了调度的一致性与高可用性。</p></div></div></div></section><section class="resume-section"><h2 class="resume-section-title">专业技能</h2><div class="resume-skills-grid"><div class="resume-skill-category"><h4>后端技术</h4><div class="resume-skill-tags">          <span class="resume-skill-tag">熟练 Java</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Spring Boot</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Spring Cloud</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 MyBatis</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="resume-skill-category">[m
+[32m+[m[32m        <h4>前端技术</h4>[m
+[32m+[m[32m        <div class="resume-skill-tags">[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 React</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Vue.js</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 TypeScript</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="resume-skill-category">[m
+[32m+[m[32m        <h4>中间件与数据库</h4>[m
+[32m+[m[32m        <div class="resume-skill-tags">[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 MySQL</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Redis</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 RabbitMQ</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Elasticsearch</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="resume-skill-category">[m
+[32m+[m[32m        <h4>其他</h4>[m
+[32m+[m[32m        <div class="resume-skill-tags">[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Git</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Docker</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Linux</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">CET-6 (580)</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div></div></section><div class="resume-footer"><h3 class="mb-4">期待您的回复！</h3><a href="#" class="btn btn-primary btn-lg">下载简历 PDF <i class="fas fa-download ms-2"></i></a></div></div><a href="#" class="snowfall-toggle-btn" id="snowfall-toggle-btn" aria-label="Toggle Snowfall Effect" style="display: flex; align-items: center; justify-content: center;"><i class="fas fa-power-off"></i></a>[m
+[32m+[m[32m<style>[m
+[32m+[m[32m.scroll-to-top-btn {[m
+[32m+[m[32m    position: fixed;[m
+[32m+[m[32m    bottom: 20px;[m
+[32m+[m[32m    right: 25px;[m
+[32m+[m[32m    width: 40px;[m
+[32m+[m[32m    height: 40px;[m
+[32m+[m[32m    background-color: var(--primary-color, #a988d4);[m
+[32m+[m[32m    color: #fff;[m
+[32m+[m[32m    border-radius: 50%;[m
+[32m+[m[32m    display: none;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m    justify-content: center;[m
+[32m+[m[32m    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);[m
+[32m+[m[32m    z-index: 99;[m
+[32m+[m[32m    text-decoration: none;[m
+[32m+[m[32m}[m
+[32m+[m[32m@media (max-width: 768px) {[m
+[32m+[m[32m    .scroll-to-top-btn {[m
+[32m+[m[32m        bottom: 20px;[m
+[32m+[m[32m        right: 15px;[m
+[32m+[m[32m        width: 40px;[m
+[32m+[m[32m        height: 40px;[m
+[32m+[m[32m        font-size: 1.3rem;[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m[32mbody.dark-mode .scroll-to-top-btn {[m
+[32m+[m[32m    background-color: var(--dark-primary-color, #8b6eb0);[m
+[32m+[m[32m}[m
+[32m+[m[32m.scroll-to-top-btn:hover {[m
+[32m+[m[32m    background-color: var(--secondary-color, #d488c2);[m
+[32m+[m[32m    color: #fff;[m
+[32m+[m[32m}[m
+[32m+[m[32mbody.dark-mode .scroll-to-top-btn:hover {[m
+[32m+[m[32m    background-color: var(--dark-secondary-color, #b06e9f);[m
+[32m+[m[32m}[m
+[32m+[m[32m</style>[m
+[32m+[m[32m<a href="#" id="scro[1mdiff --git a/home_page/html/about.html b/home_page/html/about.html[m
+[1mindex f6a2b86..ee47617 100644[m
+[1m--- a/home_page/html/about.html[m
+[1m+++ b/home_page/html/about.html[m
+[36m@@ -3,11 +3,104 @@[m [monload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet"[m
+ onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css"></noscript><link rel="preload" href="assets/vendors/fontawesome/css/all.min.css" as="style"[m
+ onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css"></noscript><link rel="stylesheet" href="assets/vendors/fonts/poppins/poppins.css"><link rel="preload" href="assets/vendors/aos/css/aos.css" as="style"[m
+ onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/vendors/aos/css/aos.css"></noscript><link rel="stylesheet" href="assets/css/style.min.css"><style>.resume-container{padding-top:100px;padding-bottom:50px;max-width:1200px;margin:0 auto;}.resume-header{text-align:center;margin-bottom:3rem;animation:fadeIn 0.8s ease-out;}.resume-avatar{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid var(--primary-color);margin-bottom:1.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.1);}.resume-name{font-size:2.5rem;font-weight:700;color:var(--secondary-color);margin-bottom:0.5rem;}.resume-title{font-size:1.2rem;color:var(--primary-color);font-weight:600;margin-bottom:1.5rem;}.resume-contact-info{display:flex;justify-content:center;flex-wrap:wrap;gap:1.5rem;margin-bottom:2rem;}.resume-contact-item{display:flex;align-items:center;gap:0.5rem;color:#555;font-size:0.95rem;}.resume-contact-item i{color:var(--primary-color);}.resume-section{margin-bottom:4rem;animation:slideUp 0.8s ease-out forwards;opacity:0;}.resume-section:nth-child(1){animation-delay:0.1s;}.resume-section:nth-child(2){animation-delay:0.2s;}.resume-section:nth-child(3){animation-delay:0.3s;}.resume-section:nth-child(4){animation-delay:0.4s;}.resume-section:nth-child(5){animation-delay:0.5s;}.resume-section-title{font-size:1.8rem;font-weight:700;color:var(--secondary-color);margin-bottom:2rem;position:relative;padding-bottom:0.8rem;border-bottom:2px solid rgba(0,0,0,0.05);}.resume-section-title::after{content:'';position:absolute;bottom:-2px;left:0;width:60px;height:2px;background-color:var(--primary-color);}.resume-timeline-item{position:relative;padding-left:2rem;margin-bottom:2.5rem;border-left:2px solid rgba(169, 136, 212, 0.3);}.resume-timeline-item::before{content:'';position:absolute;left:-6px;top:0;width:10px;height:10px;border-radius:50%;background-color:var(--primary-color);}.resume-item-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.5rem;flex-wrap:wrap;}.resume-role{font-size:1.2rem;font-weight:600;color:var(--secondary-color);}.resume-company{font-size:1rem;color:#666;font-weight:500;}.resume-date{font-size:0.9rem;color:var(--primary-color);font-weight:600;background-color:rgba(169, 136, 212, 0.1);padding:0.2rem 0.8rem;border-radius:20px;}.resume-description{color:#555;line-height:1.6;margin-top:0.5rem;}.resume-skills-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:1.5rem;}.resume-skill-category h4{font-size:1.1rem;font-weight:600;color:var(--secondary-color);margin-bottom:1rem;}.resume-skill-tags{display:flex;flex-wrap:wrap;gap:0.8rem;}.resume-skill-tag{background-color:#fff;border:1px solid rgba(0,0,0,0.1);padding:0.4rem 1rem;border-radius:5px;font-size:0.9rem;color:#555;transition:all 0.3s ease;}.resume-skill-tag:hover{background-color:#fff;color:#555;border-color:rgba(0,0,0,0.1);transform:none;}.resume-project-card{background-color:#fff;border-radius:10px;padding:1.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.05);transition:transform 0.3s ease, box-shadow 0.3s ease;height:100%;}.resume-project-card:hover{transform:none;box-shadow:0 4px 15px rgba(0,0,0,0.05);}.resume-project-title{font-size:1.2rem;font-weight:600;color:var(--secondary-color);margin-bottom:0.5rem;}.resume-project-tech{display:flex;gap:0.5rem;margin-bottom:1rem;font-size:0.8rem;color:var(--primary-color);flex-wrap:wrap;}.resume-footer{text-align:center;margin-top:4rem;padding-top:2rem;border-top:1px solid rgba(0,0,0,0.1);}body.dark-mode .resume-name, body.dark-mode .resume-section-title, body.dark-mode .resume-role, body.dark-mode .resume-skill-category h4, body.dark-mode .resume-project-title{color:var(--dark-text-color-light);}body.dark-mode .resume-contact-item, body.dark-mode .resume-company, body.dark-mode .resume-description, body.dark-mode .resume-skill-tag{color:var(--dark-text-color-dark);}body.dark-mode .resume-skill-tag, body.dark-mode .resume-project-card{background-color:var(--dark-secondary-color);border-color:rgba(255,255,255,0.05);}body.dark-mode .resume-section-title{border-bottom-color:rgba(255,255,255,0.1);}body.dark-mode .resume-date{background-color:rgba(169, 136, 212, 0.2);}body.dark-mode .resume-skill-tag:hover{background-color:var(--dark-secondary-color);color:var(--dark-text-color-dark);}@keyframes slideUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}@media (max-width:768px){.resume-item-header{flex-direction:column;}.resume-date{margin-top:0.5rem;display:inline-block;}}</style></head><body><div id="snowfall-container"></div><div id="preloader"><div class="cube-container"><div class="cube cube-1"></div><div class="cube cube-2"></div><div class="cube cube-3"></div><div class="cube cube-4"></div></div></div><header class="main-header fixed-top"><nav class="navbar navbar-expand-lg px-3 py-3"><div class="container-fluid"><div class="d-flex align-items-center w-100 justify-content-between"><a class="navbar-brand me-0" href="index.html"><span class="logo-main">Virtu</span><span class="logo-secondary">Prep</span></a><button class="navbar-toggler d-block d-lg-none" type="button" id="mobile-menu-toggle"><span class="fa-solid fa-bars menu-icon"></span></button><div class="theme-toggle-container"><button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode"><i class="fas fa-moon"></i></button></div></div><div class="collapse navbar-collapse justify-content-end d-none d-lg-block" id="navbarNav"><ul class="navbar-nav desktop-nav"><li class="nav-item"><a class="nav-link" href="index.html">主页</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">简历</a></li><li class="nav-item"><a class="nav-link" href="pricing.html">历史</a></li><li class="nav-item"><a class="nav-link" href="contact.html">帮助中心</a></li></ul></div></div></nav><div class="mega-menu-container position-absolute w-100" id="mega-menu"><div class="container-fluid px-5 py-4"><div class="row"><div class="col-lg-3 col-md-6 mb-4"><h5 class="mega-menu-title">Digital Marketing</h5><ul class="mega-menu-list list-unstyled"><li><a href="services.html">SEO</a></li><li><a href="services.html">Content Marketing</a></li><li><a href="services.html">Social Media</a></li><li><a href="services.html">PPC Campaigns</a></li></ul></div><div class="col-lg-3 col-md-6 mb-4"><h5 class="mega-menu-title">Web Development</h5><ul class="mega-menu-list list-unstyled"><li><a href="services.html">Front-End</a></li><li><a href="services.html">Back-End</a></li><li><a href="services.html">E-commerce</a></li><li><a href="services.html">CMS Solutions</a></li></ul></div><div class="col-lg-3 col-md-6 mb-4"><h5 class="mega-menu-title">Branding & Design</h5><ul class="mega-menu-list list-unstyled"><li><a href="services.html">Brand Strategy</a></li><li><a href="services.html">Logo Design</a></li><li><a href="services.html">UI/UX Design</a></li><li><a href="services.html">Graphic Design</a></li></ul></div><div class="col-lg-3 col-md-6 promo-box text-center p-4"><h4 class="text-light">Ready to start your project?</h4><p>Contact us to discuss your ideas and get a free quote today!</p><a href="#" class="btn btn-outline-light mt-3">Get a Free Quote</a></div></div></div></div></header><div class="mobile-menu-popup" id="mobile-menu-popup"><span class="fa-solid fa-xmark close-btn" id="mobile-menu-close"></span><ul class="mobile-nav-list list-unstyled text-center"><li><a href="index.html">主页</a></li><li><div class="d-flex align-items-center justify-content-center"><a href="services.html">Services</a><span class="mobile-dropdown-toggle ms-2" data-bs-toggle="collapse"[m
+[31m-data-bs-target="#mobileMegaMenu"><i class="fas fa-plus"></i></span></div><div class="collapse mega-menu-mobile mt-3" id="mobileMegaMenu"><ul class="list-unstyled"><li><a href="#">Digital Marketing</a></li><li><a href="#">Web Development</a></li><li><a href="#">Branding & Design</a></li></ul></div></li><li><a class="active" href="about.html">简历</a></li><li><a href="pricing.html">历史</a></li><li><a href="contact.html">帮助中心</a></li></ul><div class="social-icons mt-4"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div><div class="resume-container"><div class="resume-header"><img src="assets/images/john-smith.webp" alt="张伟" class="resume-avatar" width="150" height="150"><h1 class="resume-name">张伟</h1><p class="resume-title">2024届硕士应届生 / 意向岗位：全栈开发工程师</p><div class="resume-contact-info"><span class="resume-contact-item"><i class="fas fa-envelope"></i> zhang.wei@example.com</span><span class="resume-contact-item"><i class="fas fa-phone"></i> 138-0000-0000</span><span class="resume-contact-item"><i class="fas fa-map-marker-alt"></i> 成都</span><span class="resume-contact-item"><a href="#" target="_blank"><i class="fab fa-github"></i> github.com/zhangwei</a></span></div><p class="resume-description" style="max-width: 800px; margin: 0 auto;">[m
+[32m+[m[32mdata-bs-target="#mobileMegaMenu"><i class="fas fa-plus"></i></span></div><div class="collapse mega-menu-mobile mt-3" id="mobileMegaMenu"><ul class="list-unstyled"><li><a href="#">Digital Marketing</a></li><li><a href="#">Web Development</a></li><li><a href="#">Branding & Design</a></li></ul></div></li><li><a class="active" href="about.html">简历</a></li><li><a href="pricing.html">历史</a></li><li><a href="contact.html">帮助中心</a></li></ul><div class="social-icons mt-4"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div><div class="resume-container"><div class="resume-header"><img src="assets/images/john-smith.webp" alt="张伟" class="resume-avatar" width="150" height="150"><h1 class="resume-name">张伟</h1><p class="resume-title">2024届硕士应届生 / 意向岗位：java后端</p><div class="resume-contact-info"><span class="resume-contact-item"><i class="fas fa-envelope"></i> zhang.wei@example.com</span><span class="resume-contact-item"><i class="fas fa-phone"></i> 138-0000-0000</span><span class="resume-contact-item"><i class="fas fa-map-marker-alt"></i> 成都</span><span class="resume-contact-item"><a href="#" target="_blank"><i class="fab fa-github"></i> github.com/zhangwei</a></span></div><p class="resume-description" style="max-width: 800px; margin: 0 auto;">[m
+ 西华大学计算机硕士，具备扎实的全栈开发能力与良好的工程素养。在锐捷网络实习期间积累了企业级项目开发经验，熟悉从需求分析到上线部署的全流程。热衷于技术钻研，具备快速学习能力与团队协作精神。[m
+[31m-</p></div><section class="resume-section"><h2 class="resume-section-title">教育背景</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">计算机科学与技术硕士</h3><span class="resume-date">2021.09 - 2024.06</span></div><div class="resume-company">西华大学 (Xihua University)</div><p class="resume-description">主修课程：高级算法设计、分布式系统、机器学习。发表 CCF-B 类会议论文一篇。</p></div><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">软件工程学士</h3><span class="resume-date">2017.09 - 2021.06</span></div><div class="resume-company">西华大学 (Zhejiang University)</div><p class="resume-description">GPA: 3.8/4.0 (前5%)，连续三年获得校级一等奖学金。</p></div></section><section class="resume-section"><h2 class="resume-section-title">实习经历</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">全栈开发实习生</h3><span class="resume-date">2023.06 - 2023.12</span></div><div class="resume-company">锐捷网络 (Ruijie Networks)</div><p class="resume-description"><strong>核心职责：</strong>参与企业级云管理平台的前后端功能开发与性能优化。<br><strong>量化成果：</strong><br>[m
+[32m+[m[32m</p></div><section class="resume-section"><h2 class="resume-section-title">教育背景</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">计算机科学与技术硕士</h3><span class="resume-date">2021.09 - 2024.06</span></div><div class="resume-company">西华大学 (Xihua University)</div><p class="resume-description">主修课程：高级算法设计、分布式系统、机器学习。发表 CCF-B 类会议论文一篇。</p></div><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">软件工程学士</h3><span class="resume-date">2017.09 - 2021.06</span></div><div class="resume-company">西华大学 (XiHua University)</div><p class="resume-description">GPA: 3.8/4.0 (前5%)，连续三年获得校级一等奖学金。</p></div></section><section class="resume-section"><h2 class="resume-section-title">实习经历</h2><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">全栈开发实习生</h3><span class="resume-date">2023.06 - 2023.12</span></div><div class="resume-company">锐捷网络 (Ruijie Networks)</div><p class="resume-description"><strong>核心职责：</strong>参与企业级云管理平台的前后端功能开发与性能优化。<br><strong>量化成果：</strong><br>[m
+ 1. 负责设备监控模块重构，利用 WebSocket 替换轮询机制，将数据实时性从 5s 提升至 500ms，降低服务器负载 40%。<br>[m
+ 2. 优化前端资源加载策略，引入代码分割与懒加载，首屏加载时间减少 35%。<br>[m
+ 3. 协助排查并修复线上高并发场景下的内存泄漏问题，提升系统稳定性。[m
+ </p></div><div class="resume-timeline-item"><div class="resume-item-header"><h3 class="resume-role">后端开发实习生</h3><span class="resume-date">2022.07 - 2022.09</span></div><div class="resume-company">金蝶软件 (Kingdee)</div><p class="resume-description"><strong>核心职责：</strong>参与内部效率工具平台的 API 开发与维护。<br><strong>量化成果：</strong>设计并实现了一套通用的日志采集中间件，统一了 10+ 个微服务的日志格式，提升了问题排查效率 50%。[m
+[31m-</p></div></section><section class="resume-section"><h2 class="resume-section-title">项目经验</h2><div class="row"><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">电商数据可视化大屏</h3><div class="resume-project-tech"><span><i class="fas fa-code"></i> React</span><span><i class="fas fa-chart-bar"></i> ECharts</span><span><i class="fas fa-server"></i> Spring Boot</span></div><p class="resume-description"><strong>项目描述：</strong>基于 React 与 ECharts 的实时数据监控大屏，用于展示销售额、用户活跃度等核心指标。<br><strong>主要贡献：</strong>实现了数据的实时推送与动态渲染，解决了大量图表渲染导致的页面卡顿问题。</p></div></div><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">分布式任务调度系统</h3><div class="resume-project-tech"><span><i class="fas fa-cogs"></i> Golang</span><span><i class="fas fa () => {[m
+[32m+[m[32m        const scrollToTopBtn = document.getElementById('scroll-to-top');[m
+[32m+[m[32m        if (scrollToTopBtn) {[m
+[32m+[m[32m            window.addEventListener('scroll', () => {[m
+[32m+[m[32m                if (window.scrollY > 300) {[m
+[32m+[m[32m                    scrollToTopBtn.style.display = 'flex';[m
+[32m+[m[32m                } else {[m
+[32m+[m[32m                    scrollToTopBtn.style.display = 'none';[m
+[32m+[m[32m                }[m
+[32m+[m[32m            });[m
+[32m+[m
+[32m+[m[32m            scrollToTopBtn.addEventListener('click', (e) => {[m
+[32m+[m[32m                e.preventDefault();[m
+[32m+[m[32m                window.scrollTo({[m
+[32m+[m[32m                    top: 0,[m
+[32m+[m[32m                    behavior: 'smooth'[m
+[32m+[m[32m                });[m
+[32m+[m[32m            });[m
+[32m+[m[32m        }[m
+[32m+[m[32m    });[m
+[32m+[m[32m</script><script src="assets/vendors/swiper/swiper-bundle.min.js" defer></script><script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js" defer></script><script src="assets/vendors/aos/js/aos.js" defer></script><script src="assets/js/main.min.js" defer></script><script>document.addEventListener('DOMContentLoaded',function(){setTimeout(function(){var p=document.getElementById('preloader');if(p){p.style.opacity='0';setTimeout(function(){p.style.display='none'},500)}},1000)});window.onload=function(){var p=document.getElementById('preloader');if(p){p.style.opacity='0';setTimeout(function(){p.style.display='none'},500)}}</script></body></html>[m
+\ No newline at end of file[m
+ll-to-top" class="btn scroll-to-top-btn" aria-label="Scroll to Top">[m
+[32m+[m[32m    <i class="fas fa-chevron-up"></i>[m
+[32m+[m[32m</a>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m    document.addEventListener('DOMContentLoaded', () => {[m
+[32m+[m[32m        const scrollToTopBtn = document.getElementById('scroll-to-top');[m
+[32m+[m[32m        if (scrollToTopBtn) {[m
+[32m+[m[32m            window.addEventListener('scroll', () => {[m
+[32m+[m[32m                if (window.scrollY > 300) {[m
+[32m+[m[32m                    scrollToTopBtn.style.display = 'flex';[m
+[32m+[m[32m                } else {[m
+[32m+[m[32m                    scrollToTopBtn.style.display = 'none';[m
+[32m+[m[32m                }[m
+[32m+[m[32m            });[m
+[32m+[m
+[32m+[m[32m            scrollToTopBtn.addEventListener('click', (e) => {[m
+[32m+[m[32m                e.preventDefault();[m
+[32m+[m[32m                window.scrollTo({[m
+[32m+[m[32m                    top: 0,[m
+[32m+[m[32m                    behavior: 'smooth'[m
+[32m+[m[32m                });[m
+[32m+[m[32m            });[m
+[32m+[m[32m        }[m
+[32m+[m[32m    });[m
+[32m+[m[32m</script><script src="assets/vendors/swiper/swiper-bundle.min.js" defer></script><script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js" defer></script><script src="assets/vendors/aos/js/aos.js" defer></script><script src="assets/js/main.min.js" defer></script><script>document.addEventListener('DOMContentLoaded',function(){setTimeout(function(){var p=document.getElementById('preloader');if(p){p.style.opacity='0';setTimeout(function(){p.style.display='none'},500)}},1000)});window.onload=function(){var p=document.getElementById('preloader');if(p){p.style.opacity='0';setTimeout(function(){p.style.display='none'},500)}}</script></body></html>[m
+\ No newline at end of file[m
+-database"></i> Etcd</span><span><i class="fas fa-network-wired"></i> gRPC</span></div><p class="resume-description"><strong>项目描述：</strong>高可用的分布式定时任务调度平台，支持动态扩容。<br><strong>主要贡献：</strong>设计了基于 Etcd 的选主机制与任务分发策略，保证了调度的一致性与高可用性。</p></div></div></div></section><section class="resume-section"><h2 class="resume-section-title">专业技能</h2><div class="resume-skills-grid"><div class="resume-skill-category"><h4>前端技术</h4><div class="resume-skill-tags"><span class="resume-skill-tag">熟练 React</span><span class="resume-skill-tag">掌握 Vue.js</span><span class="resume-skill-tag">掌握 TypeScript</span><span class="resume-skill-tag">了解 Webpack</span></div></div><div class="resume-skill-category"><h4>后端技术</h4><div class="resume-skill-tags"><span class="resume-skill-tag">熟练 Node.js</span><span class="resume-skill-tag">掌握 Golang</span><span class="resume-skill-tag">掌握 MySQL</span><span class="resume-skill-tag">了解 Redis</span></div></div><div class="resume-skill-category"><h4>其他</h4><div class="resume-skill-tags"><span class="resume-skill-tag">掌握 Git</span><span class="resume-skill-tag">了解 Docker</span><span class="resume-skill-tag">CET-6 (580)</span></div></div></div></section><div class="resume-footer"><h3 class="mb-4">期待您的回复！</h3><a href="#" class="btn btn-primary btn-lg">下载简历 PDF <i class="fas fa-download ms-2"></i></a></div></div><button class="snowfall-toggle-btn" id="snowfall-toggle-btn" aria-label="Toggle Snowfall Effect"><i class="fas fa-power-off"></i></button><a href="#" id="scroll-to-top" class="btn scroll-to-top-btn" aria-label="Scroll to Top"><i class="fas fa-chevron-up"></i></a><script src="assets/vendors/swiper/swiper-bundle.min.js" defer></script><script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js" defer></script><script src="assets/vendors/aos/js/aos.js" defer></script><script src="assets/js/main.min.js" defer></script><script>document.addEventListener('DOMContentLoaded',function(){setTimeout(function(){var p=document.getElementById('preloader');if(p){p.style.opacity='0';setTimeout(function(){p.style.display='none'},500)}},1000)});window.onload=function(){var p=document.getElementById('preloader');if(p){p.style.opacity='0';setTimeout(function(){p.style.display='none'},500)}}</script></body></html>[m
+\ No newline at end of file[m
+[32m+[m[32m</p></div></section><section class="resume-section"><h2 class="resume-section-title">项目经验</h2><div class="row"><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">电商数据可视化大屏</h3><div class="resume-project-tech"><span><i class="fas fa-code"></i> React</span><span><i class="fas fa-chart-bar"></i> ECharts</span><span><i class="fas fa-server"></i> Spring Boot</span></div><p class="resume-description"><strong>项目描述：</strong>基于 React 与 ECharts 的实时数据监控大屏，用于展示销售额、用户活跃度等核心指标。<br><strong>主要贡献：</strong>实现了数据的实时推送与动态渲染，解决了大量图表渲染导致的页面卡顿问题。</p></div></div><div class="col-md-6 mb-4"><div class="resume-project-card"><h3 class="resume-project-title">分布式任务调度系统</h3><div class="resume-project-tech"><span><i class="fas fa-cogs"></i> Golang</span><span><i class="fas fa-database"></i> Etcd</span><span><i class="fas fa-network-wired"></i> gRPC</span></div><p class="resume-description"><strong>项目描述：</strong>高可用的分布式定时任务调度平台，支持动态扩容。<br><strong>主要贡献：</strong>设计了基于 Etcd 的选主机制与任务分发策略，保证了调度的一致性与高可用性。</p></div></div></div></section><section class="resume-section"><h2 class="resume-section-title">专业技能</h2><div class="resume-skills-grid"><div class="resume-skill-category"><h4>后端技术</h4><div class="resume-skill-tags">          <span class="resume-skill-tag">熟练 Java</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Spring Boot</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Spring Cloud</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 MyBatis</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="resume-skill-category">[m
+[32m+[m[32m        <h4>前端技术</h4>[m
+[32m+[m[32m        <div class="resume-skill-tags">[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 React</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Vue.js</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 TypeScript</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="resume-skill-category">[m
+[32m+[m[32m        <h4>中间件与数据库</h4>[m
+[32m+[m[32m        <div class="resume-skill-tags">[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 MySQL</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Redis</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 RabbitMQ</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Elasticsearch</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="resume-skill-category">[m
+[32m+[m[32m        <h4>其他</h4>[m
+[32m+[m[32m        <div class="resume-skill-tags">[m
+[32m+[m[32m          <span class="resume-skill-tag">掌握 Git</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Docker</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">了解 Linux</span>[m
+[32m+[m[32m          <span class="resume-skill-tag">CET-6 (580)</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div></div></section><div class="resume-footer"><h3 class="mb-4">期待您的回复！</h3><a href="#" class="btn btn-primary btn-lg">下载简历 PDF <i class="fas fa-download ms-2"></i></a></div></div><a href="#" class="snowfall-toggle-btn" id="snowfall-toggle-btn" aria-label="Toggle Snowfall Effect" style="display: flex; align-items: center; justify-content: center;"><i class="fas fa-power-off"></i></a>[m
+[32m+[m[32m<style>[m
+[32m+[m[32m.scroll-to-top-btn {[m
+[32m+[m[32m    position: fixed;[m
+[32m+[m[32m    bottom: 20px;[m
+[32m+[m[32m    right: 25px;[m
+[32m+[m[32m    width: 40px;[m
+[32m+[m[32m    height: 40px;[m
+[32m+[m[32m    background-color: var(--primary-color, #a988d4);[m
+[32m+[m[32m    color: #fff;[m
+[32m+[m[32m    border-radius: 50%;[m
+[32m+[m[32m    display: none;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m    justify-content: center;[m
+[32m+[m[32m    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);[m
+[32m+[m[32m    z-index: 99;[m
+[32m+[m[32m    text-decoration: none;[m
+[32m+[m[32m}[m
+[32m+[m[32m@media (max-width: 768px) {[m
+[32m+[m[32m    .scroll-to-top-btn {[m
+[32m+[m[32m        bottom: 20px;[m
+[32m+[m[32m        right: 15px;[m
+[32m+[m[32m        width: 40px;[m
+[32m+[m[32m        height: 40px;[m
+[32m+[m[32m        font-size: 1.3rem;[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m[32mbody.dark-mode .scroll-to-top-btn {[m
+[32m+[m[32m    background-color: var(--dark-primary-color, #8b6eb0);[m
+[32m+[m[32m}[m
+[32m+[m[32m.scroll-to-top-btn:hover {[m
+[32m+[m[32m    background-color: var(--secondary-color, #d488c2);[m
+[32m+[m[32m    color: #fff;[m
+[32m+[m[32m}[m
+[32m+[m[32mbody.dark-mode .scroll-to-top-btn:hover {[m
+[32m+[m[32m    background-color: var(--dark-secondary-color, #b06e9f);[m
+[32m+[m[32m}[m
+[32m+[m[32m</style>[m
+[32m+[m[32m<a href="#" id="scroll-to-top" class="btn scroll-to-top-btn" aria-label="Scroll to Top">[m
+[32m+[m[32m    <i class="fas fa-chevron-up"></i>[m
+[32m+[m[32m</a>[m
+[32m+[m[32m<script>[m
+[32m+[m[32m    document.addEventListener('DOMContentLoaded',
+                   SSUUMMMMAARRYY OOFF LLEESSSS CCOOMMMMAANNDDSS
+
+      Commands marked with * may be preceded by a number, _N.
+      Notes in parentheses indicate the behavior if _N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MMOOVVIINNGG
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or _N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or _N lines).
+  ESC-j             *  Forward  one file line (or _N file lines).
+  ESC-k             *  Backward one file line (or _N file lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or _N lines).
+  b  ^B  ESC-v      *  Backward one window (or _N lines).
+  z                 *  Forward  one window (and set window to _N).
+  w                 *  Backward one window (and set window to _N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  ESC-b             *  Backward one window, but don't stop at beginning-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to _N).
+  u  ^U             *  Backward one half-window (and set half-window to _N).
+  ESC-)  RightArrow *  Right one half screen width (or _N positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or _N positions).
+  ESC-}  ^RightArrow   Right to last column displayed.
+  ESC-{  ^LeftArrow    Left  to first column.
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  ESC-f                Like F but ring the bell when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+  R                    Repaint screen, discarding buffered input.
+        ---------------------------------------------------
+        Default "window" is the screen height.
+        Default "half-window" is half of the screen height.
+ ---------------------------------------------------------------------------
+
+                          SSEEAARRCCHHIINNGG
+
+  /_p_a_t_t_e_r_n          *  Search forward for (_N-th) matching line.
+  ?_p_a_t_t_e_r_n          *  Search backward for (_N-th) matching line.
+  n                 *  Repeat previous search (for _N-th occurrence).
+  N                 *  Repeat previous search in reverse direction.
+  ESC-n             *  Repeat previous search, spanning files.
+  ESC-N             *  Repeat previous search, reverse dir. & spanning files.
+  ^O^N  ^On         *  Search forward for (_N-th) OSC8 hyperlink.
+  ^O^P  ^Op         *  Search backward for (_N-th) OSC8 hyperlink.
+  ^O^L  ^Ol            Jump to the currently selected OSC8 hyperlink.
+  ESC-u                Undo (toggle) search highlighting.
+  ESC-U                Clear search highlighting.
+  &_p_a_t_t_e_r_n          *  Display only matching lines.
+        ---------------------------------------------------
+		Search is case-sensitive unless changed with -i or -I.
+        A search pattern may begin with one or more of:
+        ^N or !  Search for NON-matching lines.
+        ^E or *  Search multiple files (pass thru END OF FILE).
+        ^F or @  Start search at FIRST file (for /) or last file (for ?).
+        ^K       Highlight matches, but don't move (KEEP position).
+        ^R       Don't use REGULAR EXPRESSIONS.
+        ^S _n     Search for match in _n-th parenthesized subpattern.
+        ^W       WRAP search if no match found.
+        ^L       Enter next character literally into pattern.
+ ---------------------------------------------------------------------------
+
+                           JJUUMMPPIINNGG
+
+  g  <  ESC-<       *  Go to first line in file (or line _N).
+  G  >  ESC->       *  Go to last line in file (or line _N).
+  p  %              *  Go to beginning of file (or _N percent into file).
+  t                 *  Go to the (_N-th) next tag.
+  T                 *  Go to the (_N-th) previous tag.
+  {  (  [           *  Find close bracket } ) ].
+  }  )  ]           *  Find open bracket { ( [.
+  ESC-^F _<_c_1_> _<_c_2_>  *  Find close bracket _<_c_2_>.
+  ESC-^B _<_c_1_> _<_c_2_>  *  Find open bracket _<_c_1_>.
+        ---------------------------------------------------
+        Each "find close bracket" command goes forward to the close bracket 
+          matching the (_N-th) open bracket in the top line.
+        Each "find open bracket" command goes backward to the open bracket 
+          matching the (_N-th) close bracket in the bottom line.
+
+  m_<_l_e_t_t_e_r_>            Mark the current top line with <letter>.
+  M_<_l_e_t_t_e_r_>            Mark the current bottom line with <letter>.
+  '_<_l_e_t_t_e_r_>            Go to a previously marked position.
+  ''                   Go to the previous position.
+  ^X^X                 Same as '.
+  ESC-m_<_l_e_t_t_e_r_>        Clear a mark.
+        ---------------------------------------------------
+        A mark is any upper-case or lower-case letter.
+        Certain marks are predefined:
+             ^  means  beginning of the file
+             $  means  end of the file
+ ---------------------------------------------------------------------------
+
+                        CCHHAANNGGIINNGG FFIILLEESS
+
+  :e [_f_i_l_e]            Examine a new file.
+  ^X^V                 Same as :e.
+  :n                *  Examine the (_N-th) next file from the command line.
+  :p                *  Examine the (_N-th) previous file from the command line.
+  :x                *  Examine the first (or _N-th) file from the command line.
+  ^O^O                 Open the currently selected OSC8 hyperlink.
+  :d                   Delete the current file from the command line list.
+  =  ^G  :f            Print current file name.
+ ---------------------------------------------------------------------------
+
+                    MMIISSCCEELLLLAANNEEOOUUSS CCOOMMMMAANNDDSS
+
+  -_<_f_l_a_g_>              Toggle a command line option [see OPTIONS below].
+  --_<_n_a_m_e_>             Toggle a command line option, by name.
+  __<_f_l_a_g_>              Display the setting of a command line option.
+  ___<_n_a_m_e_>             Display the setting of an option, by name.
+  +_c_m_d                 Execute the less cmd each time a new file is examined.
+
+  !_c_o_m_m_a_n_d             Execute the shell command with $SHELL.
+  #_c_o_m_m_a_n_d             Execute the shell command, expanded like a prompt.
+  |XX_c_o_m_m_a_n_d            Pipe file between current pos & mark XX to shell command.
+  s _f_i_l_e               Save input to a file.
+  v                    Edit the current file with $VISUAL or $EDITOR.
+  V                    Print version number of "less".
+ ---------------------------------------------------------------------------
+
+                           OOPPTTIIOONNSS
+
+        Most options may be changed either on the command line,
+        or from within less by using the - or -- command.
+        Options may be given in one of two forms: either a single
+        character preceded by a -, or a name preceded by --.
+
+  -?  ........  --help
+                  Display help (from command line).
+  -a  ........  --search-skip-screen
+                  Search skips current screen.
+  -A  ........  --SEARCH-SKIP-SCREEN
+                  Search starts just after target line.
+  -b [_N]  ....  --buffers=[_N]
+                  Number of buffers.
+  -B  ........  --auto-buffers
+                  Don't automatically allocate buffers for pipes.
+  -c  ........  --clear-screen
+                  Repaint by clearing rather than scrolling.
+  -d  ........  --dumb
+                  Dumb terminal.
+  -D xx_c_o_l_o_r  .  --color=xx_c_o_l_o_r
+                  Set screen colors.
+  -e  -E  ....  --quit-at-eof  --QUIT-AT-EOF
+                  Quit at end of file.
+  -f  ........  --force
+ () => {[m
+[32m+[m[32m        const scrollToTopBtn = document.getElementById('scroll-to-top');[m
+[32m+[m[32m        if (scrollToTopBtn) {[m
+[32m+[m[32m            window.addEventListener('scroll', () => {[m
+[32m+[m[32m                if (window.scrollY > 300) {[m
+[32m+[m[32m                    scrollToTopBtn.style.display = 'flex';[m
+[32m+[m[32m                } else {[m
+[32m+[m[32m                    scrollToTopBtn.style.display = 'none';[m
+[32m+[m[32m                }[m
+[32m+[m[32m            });[m
+[32m+[m
+[32m+[m[32m            scrollToTopBtn.addEventListener('click', (e) => {[m
+[32m+[m[32m                e.preventDefault();[m
+[32m+[m[32m                window.scrollTo({[m
+[32m+[m[32m                    top: 0,[m
+[32m+[m[32m                    behavior: 'smooth'[m
+[32m+[m[32m                });[m
+[32m+[m[32m            });[m
+[32m+[m[32m        }[m
+[32m+[m[32m    });[m
+[32m+[m[32m</script><script src="assets/vendors/swiper/swiper-bundle.min.js" defer></script><script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js" defer></script><script src="assets/vendors/aos/js/aos.js" defer></script><script src="assets/js/main.min.js" defer></script><script>document.addEventListener('DOMContentLoaded',function(){setTimeout(function(){var p=document.getElementById('preloader');if(p){p.style.opacity='0';setTimeout(function(){p.style.display='none'},500)}},1000)});window.onload=function(){var p=document.getElementById('preloader');if(p){p.style.opacity='0';setTimeout(function(){p.style.display='none'},500)}}</script></body></html>[m
+\ No newline at end of file[m
+                  Force open non-regular files.
+  -F  ........  --quit-if-one-screen
+                  Quit if entire file fits on first screen.
+  -g  ........  --hilite-search
+                  Highlight only last match for searches.
+  -G  ........  --HILITE-SEARCH
+                  Don't highlight any matches for searches.
+  -h [_N]  ....  --max-back-scroll=[_N]
+                  Backward scroll limit.
+  -i  ........  --ignore-case
+                  Ignore case in searches that do not contain uppercase.
+  -I  ........  --IGNORE-CASE
+                  Ignore case in all searches.
+  -j [_N]  ....  --jump-target=[_N]
+                  Screen position of target lines.
+  -J  ........  --status-column
+                  Display a status column at left edge of screen.
+  -k _f_i_l_e  ...  --lesskey-file=_f_i_l_e
+                  Use a compiled lesskey file.
+  -K  ........  --quit-on-intr
+                  Exit less in response to ctrl-C.
+  -L  ........  --no-lessopen
+                  Ignore the LESSOPEN environment variable.
+  -m  -M  ....  --long-prompt  --LONG-PROMPT
+                  Set prompt style.
+  -n .........  --line-numbers
+                  Suppress line numbers in prompts and messages.
+  -N .........  --LINE-NUMBERS
+                  Display line number at start of each line.
+  -o [_f_i_l_e] ..  --log-file=[_f_i_l_e]
+                  Copy to log file (standard input only).
+  -O [_f_i_l_e] ..  --LOG-FILE=[_f_i_l_e]
+                  Copy to log file (unconditionally overwrite).
+  -p _p_a_t_t_e_r_n .  --pattern=[_p_a_t_t_e_r_n]
+                  Start at pattern (from command line).
+  -P [_p_r_o_m_p_t]   --prompt=[_p_r_o_m_p_t]
+                  Define new prompt.
+  -q  -Q  ....  --quiet  --QUIET  --silent --SILENT
+                  Quiet the terminal bell.
+  -r  -R  ....  --raw-control-chars  --RAW-CONTROL-CHARS
+                  Output "raw" control characters.
+  -s  ........  --squeeze-blank-lines
+                  Squeeze multiple blank lines.
+  -S  ........  --chop-long-lines
+                  Chop (truncate) long lines rather than wrapping.
+  -t _t_a_g  ....  --tag=[_t_a_g]
+                  Find a tag.
+  -T [_t_a_g_s_f_i_l_e] --tag-file=[_t_a_g_s_f_i_l_e]
+                  Use an alternate tags file.
+  -u  -U  ....  --underline-special  --UNDERLINE-SPECIAL
+                  Change handling of backspaces, tabs and carriage returns.
+  -V  ........  --version
+                  Display the version number of "less".
+  -w  ........  --hilite-unread
+                  Highlight first new line after forward-screen.
+  -W  ........  --HILITE-UNREAD
+                  Highlight first new line after any forward movement.
+  -x [_N[,...]]  --tabs=[_N[,...]]
+                  Set tab stops.
+  -X  ........  --no-init
+                  Don't use termcap init/deinit strings.
+  -y [_N]  ....  --max-forw-scroll=[_N]
+                  Forward scroll limit.
+  -z [_N]  ....  --window=[_N]
+                  Set size of window.
+  -" [_c[_c]]  .  --quotes=[_c[_c]]
+                  Set shell quote characters.
+  -~  ........  --tilde
+                  Don't display tildes after end of file.
+  -# [_N]  ....  --shift=[_N]
+                  Set horizontal scroll amount (0 = one half screen width).
+
+                --autosave=[_m_/_!_*]
+                  Actions which cause the history file to be saved.
+                --exit-follow-on-close
+                  Exit F command on a pipe when writer closes pipe.
+                --file-size
+                  Automatically determine the size of the input file.
+                --follow-name
+                  The F command changes files if the input file is renamed.
+                --form-feed
+                  Stop scrolling when a form feed character is reached.
+                --header=[_L[,_C[,_N]]]
+                  Use _L lines (starting at line _N) and _C columns as headers.
+                --incsearch
+                  Search file as each pattern character is typed in.
+                --intr=[_C]
+                  Use _C instead of ^X to interrupt a read.
+                --lesskey-context=_t_e_x_t
+                  Use lesskey source file contents.
+                --lesskey-src=_f_i_l_e
+                  Use a lesskey source file.
+
+                   SSUUMMMMAARRYY OOFF LLEESSSS CCOOMMMMAANNDDSS
+
+      Commands marked with * may be preceded by a number, _N.
+      Notes in parentheses indicate the behavior if _N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MMOOVVIINNGG
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or _N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or _N lines).
+  ESC-j             *  Forward  one file line (or _N file lines).
+  ESC-k             *  Backward one file line (or _N file lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or _N lines).
+  b  ^B  ESC-v      *  Backward one window (or _N lines).
+  z                 *  Forward  one window (and set window to _N).
+  w                 *  Backward one window (and set window to _N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  ESC-b             *  Backward one window, but don't stop at beginning-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to _N).
+  u  ^U             *  Backward one half-window (and set half-window to _N).
+  ESC-)  RightArrow *  Right one half screen width (or _N positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or _N positions).
+  ESC-}  ^RightArrow   Right to last column displayed.
+  ESC-{  ^LeftArrow    Left  to first column.
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  ESC-f                Like F but ring the bell when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+  R                    Repaint screen, discarding buffered input.
+        ---------------------------------------------------
+        Default "window" is the screen height.
+        Default "half-window" is half of the screen height.
+ ---------------------------------------------------------------------------
+
+                          SSEEAARRCCHHIINNGG
+
+  /_p_a_t_t_e_r_n          *  Search forward for (_N-th) matching line.
+  ?_p_a_t_t_e_r_n          *  Search backward for (_N-th) matching line.
+  n                 *  Repeat previous search (for _N-th occurrence).
+  N                 *  Repeat previous search in reverse direction.
+  ESC-n             *  Repeat previous search, spanning files.
+  ESC-N             *  Repeat previous search, reverse dir. & spanning files.
+  ^O^N  ^On         *  Search forward for (_N-th) OSC8 hyperlink.
+  ^O^P  ^Op         *  Search backward for (_N-th) OSC8 hyperlink.
+  ^O^L  ^Ol            Jump to the currently selected OSC8 hyperlink.
+  ESC-u                Undo (toggle) search highlighting.
+  ESC-U                Clear search highlighting.
+  &_p_a_t_t_e_r_n          *  Display only matching lines.
+        ---------------------------------------------------
+		Search is case-sensitive unless changed with -i or -I.
+        A search pattern may begin with one or more of:
+        ^N or !  Search for NON-matching lines.
+        ^E or *  Search multiple files (pass thru END OF FILE).
+        ^F or @  Start search at FIRST file (for /) or last file (for ?).
+        ^K       Highlight matches, but don't move (KEEP position).
+        ^R       Don't use REGULAR EXPRESSIONS.
+        ^S _n     Search for match in _n-th parenthesized subpattern.
+        ^W       WRAP search if no match found.
+        ^L       Enter next character literally into pattern.
+ ---------------------------------------------------------------------------
+
+                           JJUUMMPPIINNGG
+
+  g  <  ESC-<       *  Go to first line in file (or line _N).
+  G  >  ESC->       *  Go to last line in file (or line _N).
+  p  %              *  Go to beginning of file (or _N percent into file).
+  t                 *  Go to the (_N-th) next tag.
+  T                 *  Go to the (_N-th) previous tag.
+  {  (  [           *  Find close bracket } ) ].
+  }  )  ]           *  Find open bracket { ( [.
+  ESC-^F _<_c_1_> _<_c_2_>  *  Find close bracket _<_c_2_>.
+  ESC-^B _<_c_1_> _<_c_2_>  *  Find open bracket _<_c_1_>.
+        ---------------------------------------------------
+        Each "find close bracket" command goes forward to the close bracket 
+          matching the (_N-th) open bracket in the top line.
+        Each "find open bracket" command goes backward to the open bracket 
+          matching the (_N-th) close bracket in the bottom line.
+
+  m_<_l_e_t_t_e_r_>            Mark the current top line with <letter>.
+  M_<_l_e_t_t_e_r_>            Mark the current bottom line with <letter>.
+  '_<_l_e_t_t_e_r_>            Go to a previously marked position.
+  ''                   Go to the previous position.
+  ^X^X                 Same as '.
+  ESC-m_<_l_e_t_t_e_r_>        Clear a mark.
+        ---------------------------------------------------
+        A mark is any upper-case or lower-case letter.
+        Certain marks are predefined:
+             ^  means  beginning of the file
+             $  means  end of the file
+ ---------------------------------------------------------------------------
+
+                        CCHHAANNGGIINNGG FFIILLEESS
+
+  :e [_f_i_l_e]            Examine a new file.
+  ^X^V                 Same as :e.
+  :n                *  Examine the (_N-th) next file from the command line.
+  :p                *  Examine the (_N-th) previous file from the command line.
+  :x                *  Examine the first (or _N-th) file from the command line.
+  ^O^O                 Open the currently selected OSC8 hyperlink.
+  :d                   Delete the current file from the command line list.
+  =  ^G  :f            Print current file name.
+ ---------------------------------------------------------------------------
+
+                    MMIISSCCEELLLLAANNEEOOUUSS CCOOMMMMAANNDDSS
+
+  -_<_f_l_a_g_>              Toggle a command line option [see OPTIONS below].
+  --_<_n_a_m_e_>             Toggle a command line option, by name.
+  __<_f_l_a_g_>              Display the setting of a command line option.
+  ___<_n_a_m_e_>             Display the setting of an option, by name.
+  +_c_m_d                 Execute the less cmd each time a new file is examined.
+
+  !_c_o_m_m_a_n_d             Execute the shell command with $SHELL.
+  #_c_o_m_m_a_n_d             Execute the shell command, expanded like a prompt.
+  |XX_c_o_m_m_a_n_d            Pipe file between current pos & mark XX to shell command.
+  s _f_i_l_e               Save input to a file.
+  v                    Edit the current file with $VISUAL or $EDITOR.
+  V                    Print version number of "less".
+ ---------------------------------------------------------------------------
+
+                           OOPPTTIIOONNSS
+
+        Most options may be changed either on the command line,
+        or from within less by using the - or -- command.
+        Options may be given in one of two forms: either a single
+        character preceded by a -, or a name preceded by --.
+
+  -?  ........  --help
+                  Display help (from command line).
+  -a  ........  --search-skip-screen
+                  Search skips current screen.
+  -A  ........  --SEARCH-SKIP-SCREEN
+                  Search starts just after target line.
+  -b [_N]  ....  --buffers=[_N]
+                  Number of buffers.
+  -B  ........  --auto-buffers
+                  Don't automatically allocate buffers for pipes.
+  -c  ........  --clear-screen
+                  Repaint by clearing rather than scrolling.
+  -d  ........  --dumb
+                  Dumb terminal.
+  -D xx_c_o_l_o_r  .  --color=xx_c_o_l_o_r
+                  Set screen colors.
+  -e  -E  ....  --quit-at-eof  --QUIT-AT-EOF
+                  Quit at end of file.
+  -f  ........  --force
+                  Force open non-regular files.
+  -F  ........  --quit-if-one-screen
+                  Quit if entire file fits on first screen.
+  -g  ........  --hilite-search
+                  Highlight only last match for searches.
+  -G  ........  --HILITE-SEARCH
+                  Don't highlight any matches for searches.
+  -h [_N]  ....  --max-back-scroll=[_N]
+                  Backward scroll limit.
+  -i  ........  --ignore-case
+                  Ignore case in searches that do not contain uppercase.
+  -I  ........  --IGNORE-CASE
+                  Ignore case in all searches.
+  -j [_N]  ....  --jump-target=[_N]
+                  Screen position of target lines.
+  -J  ........  --status-column
+                  Display a status column at left edge of screen.
+  -k _f_i_l_e  ...  --lesskey-file=_f_i_l_e
+                  Use a compiled lesskey file.
+  -K  ........  --quit-on-intr
+                  Exit less in response to ctrl-C.
+  -L  ........  --no-lessopen
+                  Ignore the LESSOPEN environment variable.
+  -m  -M  ....  --long-prompt  --LONG-PROMPT
+                  Set prompt style.
+  -n .........  --line-numbers
+                  Suppress line numbers in prompts and messages.
+  -N .........  --LINE-NUMBERS
+                  Display line number at start of each line.
+  -o [_f_i_l_e] ..  --log-file=[_f_i_l_e]
+                  Copy to log file (standard input only).
+  -O [_f_i_l_e] ..  --LOG-FILE=[_f_i_l_e]
+                  Copy to log file (unconditionally overwrite).
+  -p _p_a_t_t_e_r_n .  --pattern=[_p_a_t_t_e_r_n]
+                  Start at pattern (from command line).
+  -P [_p_r_o_m_p_t]   --prompt=[_p_r_o_m_p_t]
+                  Define new prompt.
+  -q  -Q  ....  --quiet  --QUIET  --silent --SILENT
+                  Quiet the terminal bell.
+  -r  -R  ....  --raw-control-chars  --RAW-CONTROL-CHARS
+                  Output "raw" control characters.
+  -s  ........  --squeeze-blank-lines
+                  Squeeze multiple blank lines.
+  -S  ........  --chop-long-lines
+                  Chop (truncate) long lines rather than wrapping.
+  -t _t_a_g  ....  --tag=[_t_a_g]
+                  Find a tag.
+  -T [_t_a_g_s_f_i_l_e] --tag-file=[_t_a_g_s_f_i_l_e]
+                  Use an alternate tags file.
+  -u  -U  ....  --underline-special  --UNDERLINE-SPECIAL
+                  Change handling of backspaces, tabs and carriage returns.
+  -V  ........  --version
+                  Display the version number of "less".
+  -w  ........  --hilite-unread
+                  Highlight first new line after forward-screen.
+  -W  ........  --HILITE-UNREAD
+                  Highlight first new line after any forward movement.
+  -x [_N[,...]]  --tabs=[_N[,...]]
+                  Set tab stops.
+  -X  ........  --no-init
+                  Don't use termcap init/deinit strings.
+  -y [_N]  ....  --max-forw-scroll=[_N]
+                  Forward scroll limit.
+  -z [_N]  ....  --window=[_N]
+                  Set size of window.
+  -" [_c[_c]]  .  --quotes=[_c[_c]]
+                  Set shell quote characters.
+  -~  ........  --tilde
+                  Don't display tildes after end of file.
+  -# [_N]  ....  --shift=[_N]
+                  Set horizontal scroll amount (0 = one half screen width).
+
+                --autosave=[_m_/_!_*]
+                  Actions which cause the history file to be saved.
+                --exit-follow-on-close
+                  Exit F command on a pipe when writer closes pipe.
+                --file-size
+                  Automatically determine the size of the input file.
+                --follow-name
+                  The F command changes files if the input file is renamed.
+                --form-feed
+                  Stop scrolling when a form feed character is reached.
+                --header=[_L[,_C[,_N]]]
+                  Use _L lines (starting at line _N) and _C columns as headers.
+                --incsearch
+                  Search file as each pattern character is typed in.
+                --intr=[_C]
+                  Use _C instead of ^X to interrupt a read.
+                --lesskey-context=_t_e_x_t
+                  Use lesskey source file contents.
+                --lesskey-src=_f_i_l_e
+                  Use a lesskey source file.
+                --line-num-width=[_N]
+                  Set the width of the -N line number field to _N characters.
+                --match-shift=[_N]
+                  Show at least _N characters to the left of a search match.
+                --modelines=[_N]
+                  Read _N lines from the input file and look for vim modelines.
+                --mouse
+                  Enable mouse input.
+                --no-edit-warn
+                  Don't warn when using v command on a file opened via LESSOPEN.
+                --no-keypad
+                  Don't send termcap keypad init/deinit strings.
+                --no-histdups
+                  Remove duplicates from command history.
+                --no-number-headers
+                  Don't give line numbers to header lines.
+                --no-paste
+                  Ignore pasted input.
+                --no-search-header-lines
+                  Searches do not include header lines.
+                --no-search-header-columns
+                  Searches do not include header columns.
+                --no-search-headers
+                  Searches do not include header lines or columns.
+                --no-vbell
+                  Disable the terminal's visual bell.
+                --redraw-on-quit
+                  Redraw final screen when quitting.
+                --rscroll=[_C]
+                  Set the character used to mark truncated lines.
+                --save-marks
+                  Retain marks across invocations of less.
+                --search-options=[EFKNRW-]
+                  Set default options for every search.
+                --show-preproc-errors
+                  Display a message if preprocessor exits with an error status.
+                --proc-backspace
+                  Process backspaces for bold/underline.
+                --PROC-BACKSPACE
+                  Treat backspaces as control characters.
+                --proc-return
+                  Delete carriage returns before newline.
+                --PROC-RETURN
+                  Treat carriage returns as control characters.
+                --proc-tab
+                  Expand tabs to spaces.
+                --PROC-TAB
+                  Treat tabs as control characters.
+                --status-col-width=[_N]
+                  Set the width of the -J status column to _N characters.
+                --status-line
+                  Highlight or color the entire line containing a mark.
+                --use-backslash
+                  Subsequent options use backslash as escape char.
+                --use-color
+                  Enables colored text.
+                --wheel-lines=[_N]
+                  Each click of the mouse wheel moves _N lines.
+                --wordwrap
+                  Wrap lines at spaces.
+
+
+                 --line-num-width=[_N]
+                  Set the width of the -N line number field to _N characters.
+                --match-shift=[_N]
+                  Show at least _N characters to the left of a search match.
+                --modelines=[_N]
+                  Read _N lines from the input file and look for vim modelines.
+                --mouse
+                  Enable mouse input.
+                --no-edit-warn
+                  Don't warn when using v command on a file opened via LESSOPEN.
+                --no-keypad
+                  Don't send termcap keypad init/deinit strings.
+                --no-histdups
+                  Remove duplicates from command history.
+                --no-number-headers
+                  Don't give line numbers to header lines.
+                --no-paste
+                  Ignore pasted input.
+                --no-search-header-lines
+---------------------------------------------------------------------------
+
+                          LLIINNEE EEDDIITTIINNGG
+
+        These keys can be used to edit text being entered 
+        on the "command line" at the bottom of the screen.
+
+ RightArrow ..................... ESC-l ... Move cursor right one character.
+ LeftArrow ...................... ESC-h ... Move cursor left one character.
+ ctrl-RightArrow  ESC-RightArrow  ESC-w ... Move cursor right one word.
+ ctrl-LeftArrow   ESC-LeftArrow   ESC-b ... Move cursor left one word.
+ HOME ........................... ESC-0 ... Move cursor to start of line.
+ END ............................ ESC-$ ... Move cursor to end of line.
+ BACKSPACE ................................ Delete char to left of cursor.
+ DELETE ......................... ESC-x ... Delete char under cursor.
+ ctrl-BACKSPACE   ESC-BACKSPACE ........... Delete word to left of cursor.
+ ctrl-DELETE .... ESC-DELETE .... ESC-X ... Delete word under cursor.
+ ctrl-U ......... ESC (MS-DOS only) ....... Delete entire line.
+ UpArrow ........................ ESC-k ... Retrieve previous command line.
+ DownArrow ...................... ESC-j ... Retrieve next command line.
+ TAB ...................................... Complete filename & cycle.
+ SHIFT-TAB ...................... ESC-TAB   Complete filename & reverse cycle.
+ ctrl-L ................................... Complete filename, list all.
+                  Searches do not include header lines.
+                --no-search-header-columns
+                  Searches do not include header columns.
+                --no-search-headers
+                  Searches do not include header lines or columns.
+                --no-vbell
+                  Disable the terminal's visual bell.
+                --redraw-on-quit
+                  Redraw final screen when quitting.
+                --rscroll=[_C]
+                  Set the character used to mark truncated lines.
+                --save-marks
+                  Retain marks across invocations of less.
+                --search-options=[EFKNRW-]
+                  Set default options for every search.
+                --show-preproc-errors
+                  Display a message if preprocessor exits with an error status.
+                --proc-backspace
+                  Process backspaces for bold/underline.
+                --PROC-BACKSPACE
+                  Treat backspaces as control characters.
+                --proc-return
+                  Delete carriage returns before newline.
+                --PROC-RETURN
+                  Treat carriage returns as control characters.
+                --proc-tab
+                  Expand tabs to spaces.
+                --PROC-TAB
+                  Treat tabs as control characters.
+                --status-col-width=[_N]
+                  Set the width of the -J status column to _N characters.
+                --status-line
+                  Highlight or color the entire line containing a mark.
+                --use-backslash
+                  Subsequent options use backslash as escape char.
+                --use-color
+                  Enables colored text.
+                --wheel-lines=[_N]
+                  Each click of the mouse wheel moves _N lines.
+                --wordwrap
+                  Wrap lines at spaces.
+
+
+ ---------------------------------------------------------------------------
+
+                          LLIINNEE EEDDIITTIINNGG
+
+        These keys can be used to edit text being entered 
+        on the "command line" at the bottom of the screen.
+
+ RightArrow ..................... ESC-l ... Move cursor right one character.
+ LeftArrow ...................... ESC-h ... Move cursor left one character.
+ ctrl-RightArrow  ESC-RightArrow  ESC-w ... Move cursor right one word.
+ ctrl-LeftArrow   ESC-LeftArrow   ESC-b ... Move cursor left one word.
+ HOME ........................... ESC-0 ... Move cursor to start of line.
+ END ............................ ESC-$ ... Move cursor to end of line.
+ BACKSPACE ................................ Delete char to left of cursor.
+ DELETE ......................... ESC-x ... Delete char under cursor.
+ ctrl-BACKSPACE   ESC-BACKSPACE ........... Delete word to left of cursor.
+ ctrl-DELETE .... ESC-DELETE .... ESC-X ... Delete word under cursor.
+ ctrl-U ......... ESC (MS-DOS only) ....... Delete entire line.
+ UpArrow ........................ ESC-k ... Retrieve previous command line.
+ DownArrow ...................... ESC-j ... Retrieve next command line.
+ TAB ...................................... Complete filename & cycle.
+ SHIFT-TAB ...................... ESC-TAB   Complete filename & reverse cycle.
+ ctrl-L ................................... Complete filename, list all.

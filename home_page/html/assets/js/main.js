@@ -220,7 +220,10 @@ if (mobileDropdownToggle) {
     };
 
     if (snowfallToggleBtn) {
-        snowfallToggleBtn.addEventListener('click', toggleSnowfall);
+        snowfallToggleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleSnowfall();
+        });
         toggleSnowfall();
     }
 

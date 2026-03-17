@@ -1,0 +1,321 @@
+/* Editor Styles */
+
+/* Base positioning for editable containers */
+.resume-title,
+.resume-description,
+.resume-timeline-item,
+.resume-project-card,
+.resume-skill-category,
+.resume-section-title {
+    position: relative !important;
+}
+
+/* Ensure skill categories have space for buttons if needed */
+.resume-skill-category {
+    padding-bottom: 20px;
+}
+
+/* --- Resume Title Specifics (Flex for inline button) --- */
+.resume-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resume-title .edit-trigger-btn {
+    position: static; /* Reset absolute positioning */
+    margin-left: 12px; /* 8-12px right of text */
+    transform: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.resume-title:hover .edit-trigger-btn {
+    opacity: 1;
+}
+
+/* --- Generic Edit Trigger Button --- */
+.edit-trigger-btn {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+.edit-trigger-btn:hover { color: #1890ff; }
+
+.resume-description:hover .edit-trigger-btn,
+.resume-timeline-item:hover .edit-trigger-btn,
+.resume-project-card:hover .edit-trigger-btn {
+    opacity: 1;
+}
+
+/* --- Section Add Button (Next to H2) --- */
+.section-add-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    background-color: transparent;
+    color: #1890ff;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.2s ease;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.section-add-btn:hover {
+    color: #40a9ff;
+    background: none;
+    transform: scale(1.1);
+}
+
+.resume-section:hover .section-add-btn {
+    opacity: 1;
+}
+
+/* --- Card Delete Button (❌) --- */
+.card-delete-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    color: #ff4d4f; /* Red color for delete */
+    user-select: none;
+}
+
+.resume-timeline-item:hover .card-delete-btn,
+.resume-project-card:hover .card-delete-btn {
+    opacity: 1;
+}
+
+.card-delete-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Fade out animation for deletion */
+.fade-out-delete {
+    transition: all 0.3s ease;
+    opacity: 0 !important;
+    transform: scale(0.95);
+}
+
+/* --- Skill Category Edit Icon (Next to H4) --- */
+.skill-category-edit-icon {
+    font-size: 14px;
+    color: #999;
+    margin-left: 8px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease, color 0.2s ease;
+    vertical-align: middle;
+}
+.resume-skill-category:hover .skill-category-edit-icon {
+    opacity: 1;
+}
+.skill-category-edit-icon:hover {
+    color: #1890ff;
+}
+
+.resume-skill-category.editing-mode {
+    border: 1px dashed #1890ff;
+    border-radius: 8px;
+    padding: 16px;
+    margin: -16px;
+    background-color: rgba(24, 144, 255, 0.02);
+}
+
+.resume-skill-category.editing-mode .skill-category-edit-icon {
+    color: #1890ff;
+    opacity: 1;
+}
+
+/* Inline Edit Styles */
+.resume-skill-tag.editing,
+.resume-skill-category h4.editing,
+.resume-section-title.editing {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: 2px solid rgba(24, 144, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.resume-skill-tag {
+    position: relative;
+    font-size: 1.05rem;
+    padding: 0.5rem 1.1rem;
+}
+
+.resume-skill-category h4 {
+    font-size: 1.2rem;
+}
+
+/* Delete Button on Skill Tag */
+.skill-delete-btn {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 16px;
+    height: 16px;
+    background-color: #ff4d4f;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.resume-skill-category.editing-mode .skill-delete-btn {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+.skill-delete-btn:hover {
+    background-color: #ff7875;
+    transform: scale(1.2);
+}
+
+/* Add Box */
+.skill-add-box {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px dashed #d9d9d9;
+    border-radius: 5px;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    color: #1890ff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 40px;
+    height: 32px;
+    box-sizing: border-box;
+}
+
+.resume-skill-category.editing-mode .skill-add-box {
+    display: inline-flex;
+    animation: fadeIn 0.3s ease;
+}
+
+.skill-add-box:hover {
+    border-color: #1890ff;
+    background-color: rgba(24, 144, 255, 0.05);
+}
+
+.plus-sign {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.skill-add-box.force-wrap {
+    width: 100%;
+    margin-top: 8px;
+    border-style: dashed;
+}
+
+/* Adaptive Compact Layout */
+.resume-skill-tags.compact-layout {
+    gap: 4px;
+}
+
+.resume-skill-tags.compact-layout .resume-skill-tag {
+    font-size: 12px;
+    padding: 0.2rem 0.6rem;
+}
+
+.resume-skill-tags {
+    transition: gap 60ms ease;
+}
+
+.resume-skill-tag {
+    transition: font-size 60ms ease, padding 60ms ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Modal Styles */
+.editor-modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 2000; opacity: 0; visibility: hidden; transition: all 0.3s ease;
+}
+.editor-modal-overlay.active { opacity: 1; visibility: visible; }
+.editor-modal {
+    background: white; width: 90%; max-width: 800px;
+    border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 24px; transform: translateY(20px); transition: transform 0.3s ease;
+    display: flex; flex-direction: column;
+    max-height: 80vh;
+}
+.editor-modal-overlay.active .editor-modal { transform: translateY(0); }
+.editor-modal-header { margin-bottom: 20px; }
+.editor-modal-title { margin: 0; font-size: 18px; font-weight: 600; }
+.editor-modal-body { margin-bottom: 24px; flex: 1; overflow-y: auto; }
+.editor-form-textarea {
+    width: 100%; padding: 12px; border: 1px solid #d9d9d9;
+    border-radius: 4px; font-size: 14px; transition: border-color 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+    min-height: 200px; resize: vertical;
+}
+.editor-form-textarea:focus {
+    border-color: #1890ff; outline: none; box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+.editor-modal-footer { display: flex; justify-content: flex-end; gap: 12px; }
+.editor-btn {
+    padding: 6px 16px; border-radius: 4px; font-size: 14px; cursor: pointer;
+    border: 1px solid transparent; transition: all 0.3s;
+}
+.editor-btn-cancel { background: #fff; border-color: #d9d9d9; color: #666; }
+.editor-btn-cancel:hover { color: #40a9ff; border-color: #40a9ff; }
+.editor-btn-primary { background: #1890ff; color: white; }
+.editor-btn-primary:hover { background: #40a9ff; }
+
+/* Dark mode support */
+body.dark-mode .editor-modal { background: #1f1f1f; color: #fff; }
+body.dark-mode .editor-form-textarea {
+    background: #2a2a2a; border-color: #434343; color: #fff;
+}
+body.dark-mode .editor-btn-cancel { background: transparent; border-color: #434343; color: #fff; }
