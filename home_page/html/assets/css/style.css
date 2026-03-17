@@ -133,27 +133,45 @@ body.dark-mode .logo-main {
     font-weight: 500;
     position: relative;
     padding: 0.5rem 1rem !important;
+    white-space: nowrap; /* 强制不换行 */
+    display: inline-flex; /* 确保水平排列 */
+    align-items: center; /* 垂直居中 */
+    max-width: 100%; /* 防止溢出 */
+    overflow: hidden; /* 溢出隐藏 */
+    text-overflow: ellipsis; /* 溢出显示省略号 */
 }
 /* Dark Mode Nav Links */
 body.dark-mode .nav-link {
     color: var(--dark-text-color-dark);
 }
 
+/* 响应式字体调整：在空间紧张时缩小字体 */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .nav-link {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.5rem !important;
+    }
+}
+
 .nav-link::after {
     content: '';
     position: absolute;
-    bottom: -5px;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-color);
-    transition: all 0.3s ease;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    height: 3px;
+    background-color: #E0B0FF;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
 }
 
 .nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link:active::after,
 .nav-link.active::after {
-    width: 80%;
-    left: 10%;
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .navbar-toggler {

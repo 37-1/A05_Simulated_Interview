@@ -1,0 +1,69 @@
+{
+  "personal_info": {
+    "name": "Alex Morgan",
+    "title": "Senior Full Stack Developer",
+    "summary": "Passionate developer with 5+ years of experience in building scalable web applications. Expert in React, Node.js, and Cloud Architecture. Committed to writing clean, maintainable code and delivering high-quality user experiences.",
+    "avatar": "assets/images/avatar-placeholder.jpg",
+    "contact": {
+      "email": "alex.morgan@example.com",
+      "phone": "+1 (555) 123-4567",
+      "location": "San Francisco, CA",
+      "linkedin": "linkedin.com/in/alexmorgan",
+      "github": "github.com/alexmorgan"
+    }
+  },
+  "education": [
+    {
+      "degree": "Master of Computer Science",
+      "school": "Stanford University",
+      "year": "2016 - 2018",
+      "description": "Specialized in Artificial Intelligence and Human-Computer Interaction."
+    },
+    {
+      "degree": "Bachelor of Science in Software Engineering",
+      "school": "University of California, Berkeley",
+      "year": "2012 - 2016",
+      "description": "Graduated with Honors. Dean's List 2014-2016."
+    }
+  ],
+  "work_experience": [
+    {
+      "role": "Senior Full Stack Developer",
+      "company": "Tech Innovators Inc.",
+      "year": "2021 - Present",
+      "description": "Leading the frontend team in migrating a legacy monolith to a micro-frontend architecture using React and GraphQL. Improved site performance by 40%."
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "Creative Solutions LLC",
+      "year": "2018 - 2021",
+      "description": "Developed and maintained multiple client e-commerce platforms using Vue.js and Laravel. Implemented automated testing pipelines reducing bug reports by 25%."
+    }
+  ],
+  "skills": [
+    { "category": "Frontend", "items": ["React", "Vue.js", "TypeScript", "Tailwind CSS", "Next.js"] },
+    { "category": "Backend", "items": ["Node.js", "Python", "Go", "PostgreSQL", "Redis"] },
+    { "category": "DevOps", "items": ["Docker", "Kubernetes", "AWS", "CI/CD", "Terraform"] },
+    { "category": "Tools", "items": ["Git", "Jira", "Figma", "VS Code", "Postman"] }
+  ],
+  "projects": [
+    {
+      "name": "E-Commerce Dashboard",
+      "role": "Lead Developer",
+      "year": "2023",
+      "description": "A comprehensive analytics dashboard for online retailers, featuring real-time data visualization and inventory management.",
+      "tech_stack": ["React", "D3.js", "Node.js", "MongoDB"]
+    },
+    {
+      "name": "Task Management API",
+      "role": "Backend Developer",
+      "year": "2022",
+      "description": "A high-performance RESTful API for a collaborative task management tool, supporting real-time updates via WebSockets.",
+      "tech_stack": ["Go", "Gin", "PostgreSQL", "Docker"]
+    }
+  ],
+  "contact_cta": {
+    "text": "Interested in working together?",
+    "button_text": "Download Resume"
+  }
+}

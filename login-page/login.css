@@ -20,7 +20,7 @@ body {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background-image: url("../static/images/根据图片生成视频(1)(1).png");
+  background-image: url("../static/images/hero_bg.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -319,7 +319,7 @@ body {
 }
 
 .scroll-background.lazy-loaded {
-  background-image: url("../static/images/FF614036F16DA37A6AE159D0ECF5AD01.jpg");
+  background-image: url("../static/images/scroll_bg.jpg");
 }
 
 /* Animation Classes */
@@ -501,7 +501,7 @@ body {
 }
 
 .toggle-switch input:checked + .toggle-slider {
-  background: #22C45F; /* Active green */
+  background: #A988D4; /* Active Purple (Same as button) */
 }
 
 .toggle-switch input:checked + .toggle-slider::before {
@@ -598,7 +598,7 @@ body {
 }
 
 .scroll-background-2.lazy-loaded {
-  background-image: url("../static/images/【哲风壁纸】2024-10-23 19_59_25(1).png");
+  background-image: url("../static/images/scroll_bg_2.png");
 }
 
 /* 返回顶部按钮 */
