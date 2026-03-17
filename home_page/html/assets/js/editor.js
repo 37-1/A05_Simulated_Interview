@@ -683,4 +683,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Global Edit FAB Logic
+    const globalEditFab = document.getElementById('global-edit-fab');
+    if (globalEditFab) {
+        globalEditFab.addEventListener('click', () => {
+            const isEditMode = document.body.dataset.editMode === 'true';
+            if (isEditMode) {
+                // Turn off
+                document.body.dataset.editMode = 'false';
+                document.body.classList.remove('edit-active');
+                globalEditFab.setAttribute('aria-pressed', 'false');
+                
+                // Force blur any active inline edits to save them
+                document.querySelectorAll('.editing').forEach(el => el.blur());
+                
+                if (activeCategory) {
+                    exitEditMode(activeCategory);
+                }
+            } else {
+                // Turn on
+                document.body.dataset.editMode = 'true';
+                document.body.classList.add('edit-active');
+                globalEditFab.setAttribute('aria-pressed', 'true');
+            }
+        });
+    }
+
 });

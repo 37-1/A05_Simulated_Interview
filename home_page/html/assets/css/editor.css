@@ -28,11 +28,8 @@
     margin-left: 12px; /* 8-12px right of text */
     transform: none;
     opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.resume-title:hover .edit-trigger-btn {
-    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
 }
 
 /* --- Generic Edit Trigger Button --- */
@@ -47,7 +44,8 @@
     background: none;
     cursor: pointer;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
     z-index: 100;
     display: flex;
     align-items: center;
@@ -56,12 +54,6 @@
 }
 
 .edit-trigger-btn:hover { color: #1890ff; }
-
-.resume-description:hover .edit-trigger-btn,
-.resume-timeline-item:hover .edit-trigger-btn,
-.resume-project-card:hover .edit-trigger-btn {
-    opacity: 1;
-}
 
 /* --- Section Add Button (Next to H2) --- */
 .section-add-btn {
@@ -77,6 +69,7 @@
     box-shadow: none;
     cursor: pointer;
     opacity: 0;
+    pointer-events: none;
     transition: all 0.2s ease;
     vertical-align: middle;
     font-size: 24px;
@@ -88,10 +81,6 @@
     color: #40a9ff;
     background: none;
     transform: scale(1.1);
-}
-
-.resume-section:hover .section-add-btn {
-    opacity: 1;
 }
 
 /* --- Card Delete Button (❌) --- */
@@ -109,14 +98,10 @@
     cursor: pointer;
     z-index: 10;
     opacity: 0;
+    pointer-events: none;
     transition: opacity 0.2s ease, transform 0.2s ease;
     color: #ff4d4f; /* Red color for delete */
     user-select: none;
-}
-
-.resume-timeline-item:hover .card-delete-btn,
-.resume-project-card:hover .card-delete-btn {
-    opacity: 1;
 }
 
 .card-delete-btn:hover {
@@ -137,11 +122,9 @@
     margin-left: 8px;
     cursor: pointer;
     opacity: 0;
+    pointer-events: none;
     transition: opacity 0.2s ease, color 0.2s ease;
     vertical-align: middle;
-}
-.resume-skill-category:hover .skill-category-edit-icon {
-    opacity: 1;
 }
 .skill-category-edit-icon:hover {
     color: #1890ff;
@@ -319,3 +302,57 @@ body.dark-mode .editor-form-textarea {
     background: #2a2a2a; border-color: #434343; color: #fff;
 }
 body.dark-mode .editor-btn-cancel { background: transparent; border-color: #434343; color: #fff; }
+
+/* Global Edit Mode Visibility */
+body.edit-active .edit-trigger-btn,
+body.edit-active .section-add-btn,
+body.edit-active .card-delete-btn,
+body.edit-active .skill-category-edit-icon {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Global Edit FAB */
+.global-edit-fab {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--primary-color, #1890ff);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.global-edit-fab:hover {
+    background-color: var(--secondary-color, #40a9ff);
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+.global-edit-fab:active {
+    transform: scale(0.95);
+}
+
+body.edit-active .global-edit-fab {
+    background-color: #ff4d4f;
+}
+
+body.edit-active .global-edit-fab:hover {
+    background-color: #ff7875;
+}
+
+@media (max-width: 768px) {
+    .global-edit-fab {
+        right: 16px;
+        bottom: 80px;
+    }
+}
