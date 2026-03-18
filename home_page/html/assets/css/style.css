@@ -1419,3 +1419,120 @@ body.dark-mode .error-code {
     border: 0;
     padding: 0;
 }
+
+/* Job Selector Dropdown */
+.job-selector-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.custom-dropdown {
+    position: relative;
+    width: 280px; 
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.dropdown-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 7px; /* Reduced padding */
+    background-color: transparent; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+    /* backdrop-filter removed for full transparency */
+    position: relative; /* Added for z-index */
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+.dropdown-trigger:hover, .custom-dropdown.active .dropdown-trigger {
+    background-color: transparent;
+}
+
+.dropdown-label {
+    color: #fff;
+    font-weight: 600;
+    margin-right: 3px; /* Reduced margin */
+}
+
+.selected-value {
+    flex-grow: 1;
+    color: var(--text-color-light);
+}
+
+.dropdown-arrow {
+    transition: transform 0.3s ease;
+    color: #000000;
+}
+
+.custom-dropdown.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+    background-color: transparent; 
+    backdrop-filter: blur(10px); 
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 20;
+    overflow: hidden;
+}
+
+.custom-dropdown.active .dropdown-options {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-options li {
+    padding: 12px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.2s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-options li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-options li:hover, .dropdown-options li.selected {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.check-icon {
+    color: #000000;
+    font-size: 0.9rem;
+}
+
+/* Button Adjustments */
+.hero-section .btn-primary {
+    font-size: calc(1.25rem + 3px) !important; 
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    min-width: 290px !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}

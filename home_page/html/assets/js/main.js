@@ -273,4 +273,73 @@ if (mobileDropdownToggle) {
 
     // Load the saved theme first
     loadTheme();
+
+    // Job Selector Dropdown Logic
+    const dropdown = document.querySelector('.custom-dropdown');
+    if (dropdown) {
+        const trigger = dropdown.querySelector('.dropdown-trigger');
+        const options = dropdown.querySelectorAll('.dropdown-options li');
+        const selectedValueSpan = dropdown.querySelector('.selected-value');
+        
+        const selectOption = (option) => {
+            // Update selected class
+            options.forEach(opt => {
+                opt.classList.remove('selected');
+                opt.querySelector('.check-icon').style.display = 'none';
+            });
+            option.classList.add('selected');
+            option.querySelector('.check-icon').style.display = 'inline-block';
+
+            // Update trigger text
+            const value = option.getAttribute('data-value');
+            selectedValueSpan.textContent = value; 
+
+            // Trigger Event
+            console.log('Selected Job:', value);
+            const event = new CustomEvent('jobSelected', { detail: { job: value } });
+            document.dispatchEvent(event);
+        };
+
+        // Toggle Dropdown
+        trigger.addEventListener('click', (e) => {
+            e.stopPropagation(); 
+            dropdown.classList.toggle('active');
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+
+        // Keyboard Navigation
+        dropdown.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            } else if (e.key === 'Escape') {
+                dropdown.classList.remove('active');
+            } else if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                const currentIndex = Array.from(options).findIndex(opt => opt.classList.contains('selected'));
+                const nextIndex = (currentIndex + 1) % options.length;
+                selectOption(options[nextIndex]);
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                const currentIndex = Array.from(options).findIndex(opt => opt.classList.contains('selected'));
+                const prevIndex = (currentIndex - 1 + options.length) % options.length;
+                selectOption(options[prevIndex]);
+            }
+        });
+
+        // Option Selection
+        options.forEach(option => {
+            option.addEventListener('click', (e) => {
+                e.stopPropagation();
+                selectOption(option);
+                dropdown.classList.remove('active');
+            });
+        });
+    }
 });
