@@ -66,6 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('return-home-modal');
     const confirmBtn = document.getElementById('modal-confirm-btn');
     const cancelBtn = document.getElementById('modal-cancel-btn');
+    const reviewBtn = document.getElementById('modal-review-btn');
+
+    let lastDuration = 0;
 
     if (endInterviewBtn) {
         endInterviewBtn.addEventListener('click', () => {
@@ -81,6 +84,15 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 // Second click: Stop interview, show modal
                 clearInterval(timerInterval);
+                lastDuration = seconds;
+                
+                // Immediately reset timer
+                seconds = 0;
+                if (timerElement) {
+                    timerElement.textContent = '00:00';
+                    timerElement.parentElement.setAttribute('aria-label', `面试已进行 0 分钟`);
+                }
+
                 if (modal) {
                     modal.style.display = 'flex';
                     modal.setAttribute('aria-hidden', 'false');
@@ -100,14 +112,52 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if (reviewBtn) {
+        reviewBtn.addEventListener('click', () => {
+            alert('本次复盘功能开发中...');
+        });
+    }
+
     if (cancelBtn) {
         cancelBtn.addEventListener('click', () => {
-            // Close modal and resume timer
+            // Close modal
             if (modal) {
                 modal.style.display = 'none';
                 modal.setAttribute('aria-hidden', 'true');
             }
-            timerInterval = setInterval(updateTimer, 1000);
+            
+            // Format the ended time
+            const mins = Math.floor(lastDuration / 60).toString().padStart(2, '0');
+            const secs = (lastDuration % 60).toString().padStart(2, '0');
+            
+            // Reset states
+            isInterviewStarted = false;
+            btnText.textContent = '开始面试';
+            btnIcon.className = 'fas fa-play'; // Ensure this matches initial icon
+            endInterviewBtn.classList.remove('btn-danger');
+            endInterviewBtn.classList.add('btn-primary');
+            
+            // Append to history
+            const historyList = document.querySelector('.history-list');
+            if (historyList) {
+                const li = document.createElement('li');
+                li.className = 'history-item-ended';
+                li.innerHTML = `
+                    <div class="history-ended-time" style="color: #e74c3c; font-weight: bold; margin-bottom: 5px;"><i class="fas fa-stop-circle"></i> 上次面试结束 (用时 ${mins}:${secs})</div>
+                    <a href="javascript:void(0)" class="history-ended-action" onclick="alert('查看表现功能开发中...')" style="color: #3498db; text-decoration: none; font-size: 0.9em;"><i class="fas fa-file-alt"></i> 查看表现</a>
+                `;
+                li.style.borderLeft = '3px solid #e74c3c';
+                li.style.paddingLeft = '10px';
+                li.style.marginBottom = '10px';
+                li.style.backgroundColor = '#fdf2f2';
+                li.style.padding = '10px';
+                li.style.borderRadius = '5px';
+                
+                historyList.appendChild(li);
+                
+                const historyContent = document.querySelector('.history-content');
+                if (historyContent) historyContent.scrollTop = historyContent.scrollHeight;
+            }
         });
     }
 

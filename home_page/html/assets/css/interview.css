@@ -75,14 +75,14 @@ body.dark-mode .interview-header {
 .header-right { flex: 1; justify-content: flex-end; gap: 15px; }
 
 .timer-box {
-    padding: 8px 20px;
-    background-color: var(--bg-light);
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 8px;
-    font-weight: 600;
-    color: var(--secondary-color);
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
+    padding: 8px 20px; /* 保留原有内边距，保证元素大小和点击区域 */
+    background-color: transparent; /* 改为完全透明背景 */
+    border: none; /* 移除边框 */
+    border-radius: 8px; /* 保留圆角，视觉更柔和 */
+    font-weight: 600; /* 保留字体加粗 */
+    color: var(--secondary-color); /* 保留文字颜色 */
+    /* 移除内部阴影（inset），透明背景下内部阴影会显得突兀 */
+    transition: all 0.3s ease; /* 保留过渡效果，方便后续扩展交互 */
 }
 
 body.dark-mode .timer-box {
@@ -122,19 +122,19 @@ body.dark-mode .timer-box {
 }
 
 .panel-left {
-    flex: 0 0 25%;
+    flex: 3;
     display: flex;
     flex-direction: column;
-    min-width: 450px;
+    min-width: 490px;
 }
 
 .panel-center {
-    flex: 1;
+    flex: 5;
     display: flex;
     flex-direction: column;
-    min-width: 400px;
-    padding: 20px;
-    gap: 20px;
+    min-width: 300px;
+    padding: 10px;
+    gap: 10px;
     background-color: rgba(23, 42, 78, 0.02);
 }
 body.dark-mode .panel-center {
@@ -142,11 +142,11 @@ body.dark-mode .panel-center {
 }
 
 .panel-right {
-    flex: 0 0 25%;
+    flex: 2;
     display: flex;
     flex-direction: column;
-    min-width: 250px;
-    padding: 20px;
+    min-width: 180px;
+    padding: 10px;
 }
 
 /* Dividers */
@@ -168,11 +168,28 @@ body.dark-mode .panel-divider {
 }
 
 /* Left Panel Sections */
-.top-section, .bottom-section {
-    flex: 1;
-    padding: 20px;
+.top-section {
+    flex: 0 0 auto;
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-section {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 0; /* Important for preventing flex overflow */
+}
+
+.bottom-section .card {
+    width: 100%;
+    height: 100%;
 }
 
 /* Reusable Card Style */
@@ -219,30 +236,99 @@ body.dark-mode .card-header {
 
 /* Specific Cards */
 .video-card {
-    flex: 1;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.4; /* Adjusted to be slightly taller while keeping >= 1.4 requirement */
+    margin: 0;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    border: 1px solid var(--secondary-color);
+    background: #f8f9fa; /* Plain, clean background */
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    box-shadow: none; /* Removed heavy shadow */
+    position: relative;
+    overflow: hidden;
 }
 .video-card .card-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--text-color-dark);
-    gap: 10px;
+    color: #6c757d; /* Softer text color */
+    gap: 15px;
+    z-index: 1;
 }
+
+/* Camera styling elements */
+.camera-bracket {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.15); /* Softer, darker borders for light background */
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+.camera-bracket.top-left { top: 15px; left: 15px; border-right: none; border-bottom: none; }
+.camera-bracket.top-right { top: 15px; right: 15px; border-left: none; border-bottom: none; }
+.camera-bracket.bottom-left { bottom: 15px; left: 15px; border-right: none; border-top: none; }
+.camera-bracket.bottom-right { bottom: 15px; right: 15px; border-left: none; border-top: none; }
+
+.rec-indicator {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #dc3545; /* Red color for REC text */
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 2;
+}
+.rec-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #dc3545;
+    border-radius: 50%;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.video-label {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    color: #6c757d; /* Matching text color */
+}
+
 body.dark-mode .video-card {
-    background-color: var(--dark-secondary-color);
-    border-color: var(--dark-primary-color);
+    background: #1a1c20; /* Plain dark background */
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: none;
 }
 body.dark-mode .video-card .card-content {
-    color: var(--dark-text-color-light);
+    color: #8b949e;
+}
+
+body.dark-mode .camera-bracket {
+    border-color: rgba(255, 255, 255, 0.15);
 }
 
 .placeholder-icon {
-    font-size: 4rem;
+    font-size: 3.5rem; /* Slightly smaller */
+    color: #adb5bd; /* Plain color, no glow */
+    filter: none; /* Removed drop-shadow */
+    margin-bottom: 5px;
+}
+body.dark-mode .placeholder-icon {
+    color: #495057;
 }
 
 .analysis-card {
@@ -562,9 +648,17 @@ body.dark-mode .history-item-ended {
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-    .panel-left, .panel-right {
-        flex: 0 0 20%;
-        min-width: 200px;
+    .panel-left {
+        flex: 2.5;
+        min-width: 250px;
+    }
+    .panel-center {
+        flex: 5;
+        min-width: 350px;
+    }
+    .panel-right {
+        flex: 1.5;
+        min-width: 150px;
     }
 }
 
@@ -577,8 +671,22 @@ body.dark-mode .history-item-ended {
     .panel-left, .panel-right {
         flex: none;
         width: 100%;
-        min-height: 300px;
+        min-height: auto;
         flex-direction: row;
+    }
+    
+    .panel-left {
+        min-height: 300px;
+    }
+    
+    .panel-left > .top-section {
+        flex: 1;
+        width: 50%;
+    }
+    
+    .panel-left > .bottom-section {
+        flex: 1;
+        width: 50%;
     }
     .top-section, .bottom-section {
         padding: 10px;
@@ -613,6 +721,12 @@ body.dark-mode .history-item-ended {
     
     .panel-left {
         flex-direction: column;
+    }
+    
+    .panel-left > .top-section,
+    .panel-left > .bottom-section {
+        width: 100%;
+        flex: none;
     }
     .panel-divider {
         width: 100%;
