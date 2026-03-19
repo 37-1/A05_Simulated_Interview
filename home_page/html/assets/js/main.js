@@ -342,4 +342,37 @@ if (mobileDropdownToggle) {
             });
         });
     }
+
+    // Interview Navigation Logic
+    const startInterviewBtn = document.getElementById('start-interview-btn');
+    if (startInterviewBtn) {
+        startInterviewBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // Collect analytics data
+            const selectedJob = document.querySelector('.selected-value')?.textContent || 'Java后端';
+            
+            // Callback for analytics
+            const trackAnalytics = (eventData, callback) => {
+                console.log('[Analytics Event]', eventData);
+                // Simulate an async tracking call
+                setTimeout(() => {
+                    if(typeof callback === 'function') callback();
+                }, 100);
+            };
+
+            trackAnalytics({
+                eventName: 'start_interview_clicked',
+                jobTitle: selectedJob,
+                timestamp: new Date().toISOString()
+            }, () => {
+                // Seamless transition: fade out body then navigate
+                document.body.style.transition = 'opacity 0.3s ease';
+                document.body.style.opacity = '0';
+                setTimeout(() => {
+                    window.location.href = 'interview.html';
+                }, 300);
+            });
+        });
+    }
 });
