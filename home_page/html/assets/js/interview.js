@@ -41,6 +41,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     loadTheme();
 
+    // Home Icon Button Click Logic
+    const homeIconBtn = document.getElementById('nav-home-icon-btn');
+    let homeIconBtnClicked = false;
+    if (homeIconBtn) {
+        homeIconBtn.addEventListener('click', () => {
+            if (homeIconBtnClicked) return;
+            homeIconBtnClicked = true;
+            
+            // Navigate to home page
+            window.location.href = '/';
+
+            // Throttle reset
+            setTimeout(() => {
+                homeIconBtnClicked = false;
+            }, 200);
+        });
+    }
+
     // 2. Timer & Interview Flow Logic
     let seconds = 0;
     const timerElement = document.getElementById('interview-timer');
