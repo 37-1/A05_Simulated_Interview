@@ -74,53 +74,6 @@ body.dark-mode .interview-header {
 .header-center { flex: 2; justify-content: center; }
 .header-right { flex: 1; justify-content: flex-end; gap: 15px; }
 
-.nav-home-icon-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0;
-    margin-left: 8px;
-    margin-right: 0; /* Counteracts 15px gap to achieve 8px fixed distance */
-    color: var(--primary-color);
-    cursor: pointer;
-    transition: color 0.2s ease, filter 0.2s ease;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
-    touch-action: manipulation;
-}
-
-.nav-home-icon-btn i {
-    font-size: 20px;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-home-icon-btn:hover,
-.nav-home-icon-btn:active {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    outline: none;
-    filter: brightness(0.9); /* Darken by 10% */
-    transform: none;
-}
-
-.nav-home-icon-btn:focus,
-.nav-home-icon-btn:focus-visible {
-    outline: none;
-    box-shadow: none;
-}
-
-body.dark-mode .nav-home-icon-btn {
-    color: var(--dark-primary-color);
-}
-
 .timer-box {
     padding: 8px 20px; /* 保留原有内边距，保证元素大小和点击区域 */
     background-color: transparent; /* 改为完全透明背景 */
